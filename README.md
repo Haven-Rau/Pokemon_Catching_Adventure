@@ -5,8 +5,12 @@
 # Summary:
 The original Pokemon games, Red and Blue, reshaped the video game industry when it was released. Video games at the time focused on linearity; a clear beginning and end with not much content in between. Princess peach is captured, go on this quest to save her. While many Pokemon enthusiasts remember its game for the lovable characters and story, Pokemon was one of the first games to develop an experience buiilt on repitition: a loop of collection, storing, and managing Pokemon that could be enjoyed beyond the main story. Within this gameplay loop, the original develpopers needed to use data to their advantage. Games 
 
-Please take a look at the final product before reading!
+### Please take a look at the final product before reading!
 Available on Youtube using this link: "YOUTUBE LINK"
+
+Goal of the game:
+- incorperating original Pokemon music (and a soundtrack from the fan-made game, Insurgence) as well as original sound effects like the pokemon wobble sound and the obtaining item sound. 
+- 
 
 ## Developing the backend databases:
 
@@ -23,7 +27,7 @@ date_created DATETIME NOT NULL
 );
 ```
 
-At the beginning of the game, when prompted for a new game or continue game, the selection of "new game" starts the trigger in the database to generate a new row in the trainer table that includes a unique trainer ID. The generated trainer_id is then pulled back into Python to match the Pokemon encounters with a player in the databases.
+At the beginning of the game, when prompted for a new game or continue game, the selection of "new game" starts the trigger in the database to generate a new row in the trainer table that includes a unique trainer ID. The generated trainer_id is then returned to Python to match the future Pokemon encounters with a defined player in the databases.
 
 ```python
     cursor.execute(
@@ -70,6 +74,9 @@ If a player chooses to continue their previous game, they are directed to input 
                 trainer_name = cursor.fetchone()[0]
                 return trainer_name,trainer_id
 ```
+
+Table SQL code is available here: 
+Inser SQL code is available here: 
 
 ## Encountering Pokemon
 
@@ -141,7 +148,61 @@ Here's the code for running this calculation in python:
         final_speed = calculate_stat(base_speed, speed_iv, level)
 ```
 
+Option to encounter a new pokemon
+
 ### Capturing Pokemon
 
-Catching a Pokemon in the games is all about 
+In all Pokemon games, similar to stats, each pokemon has a defined base catch rate. Once an encounter begins, that catch rate is adjusted through an advanced formula to account for variations in stats like level, hp, and speed. Better, more powerful Pokemon like legendaries are almost always harder to catch than less powerful pokemon. Pokemon with lower capture rates often promote the concept of battling Pokemon with your own Pokemon before capturing. As your Pokemon attacks, the enemies Pokemon's hp is decreases, which then increase that Pokemon's catch rate.
+However, since my game has no battling mechanic and focuses more on just the catching experience, I created a small formula for catching Pokemon, which still uses the original base catch rates but doesn't allow for changes from stat variation of hp reduction by battling. 
+
+
+
+Once a Pokemon is captured, the live database is used to record that capture. 
+
+The table is here:
+
+```SQL
+Create table trainer_pokemon
+(
+instance_id integer identity Primary Key,
+trainer_id integer REFERENCES trainer(trainer_id) not null,
+pokedex_id integer REFERENCES pokemon_species(pokedex_id) not null,
+pokemon_name varchar(255) not null,
+iv_hp integer not null,
+iv_attack integer not null,
+iv_defense integer not null,
+iv_sp_attack integer not null,
+iv_sp_defense integer not null,
+iv_speed integer not null,
+level integer not null,
+pokeball_id integer REFERENCES pokeball(pokeball_id) not null
+)
+```
+
+Using variations in pokeballs 
+if trainer could choose, they'd just throw the best Pokeball, so it's better to be random. 
+
+
+If Caught:
+Once a Pokemon is caught, I built python trigger to create another row in the database with all of the Pokemon's ivs, which creates a sequential instance_id to uniquely define the capture. The trainer_id is also attached to the captured pokemon so that it can be joined to the trainer table for an official Pokedex. 
+
+```Python
+          cursor.execute(
+                """INSERT INTO 
+                         trainer_pokemon (trainer_id, pokedex_id, pokemon_name, iv_hp, iv_attack, iv_defense, iv_sp_attack, iv_sp_defense, iv_speed, level, pokeball_id)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (trainer_id, pokedex_id, pokemon_name, final_hp, final_attack, final_defense, final_sp_atk, final_sp_def, final_speed, level, pokeball_id)
+            )
+```
+
+
+If Pokemon escapes:
+
+retry, catch new pokemon, or....
+
+has a 25% chance of running away and forcing you to encounter a different Pokemon. 
+
+
+Adding a happy ending after capturing 3 Pokemon for professor Oak:
+
 
