@@ -38,10 +38,67 @@ date_created DATETIME NOT NULL
 
 Next, all 1025 Pokemon that have existed in the Pokemon universe need to be loaded into a table, along with their base stats. These stats are used during the encounter sequence for generating unique stats for each Pokemon. Since manually typing each Pokemon and its stats would take hours, I downloaded on online database into Excel and modified it to fit my table and game. 
 
-You can access the excel table here: 
+You can access the excel table here: [Modified Pokemon Database.csv](https://github.com/user-attachments/files/24351705/Modified.Pokemon.Database.csv)
 
-[Modified Pokemon Database.csv](https://github.com/user-attachments/files/24351705/Modified.Pokemon.Database.csv)
+Once the CSV is saved to your computer, you can run an sql query to load it into the table:
 
+```sql
+BULK INSERT pokemon_species
+FROM 'YourFileLocation\Modified Pokemon Database.csv'
+WITH (
+    FIRSTROW = 2,
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '\n',
+    FORMAT='CSV',
+    TABLOCK
+);
+```
+
+After creating the Pokemon_species table, we need to add the Pokeball data to be later retrieved when catching Pokemon. Later on, I explain how throwing balls are incorperating into the game.
+
+```sql
+create table pokeball
+(
+pokeball_id integer primary key,
+pokeball_name varchar(255) not null,
+catch_rate_mult float not null
+)
+```
+
+For this game, I only included pokeballs, greatballs, ultraballs, and masterballs, with each ball containing a different catch probability multiplier. 
+
+```sql
+insert into pokeball (pokeball_id,pokeball_name,catch_rate_mult)
+values
+(1, 'pokeball',1),
+(2, 'greatball',1.5),
+(3, 'ultraball',2),
+(4, 'masterball',100)
+```
+
+Lastly, we need to built a trainer_pokemon database. 
+
+```SQL
+Create table trainer_pokemon
+(
+instance_id integer identity Primary Key,
+trainer_id integer REFERENCES trainer(trainer_id) not null,
+pokedex_id integer REFERENCES pokemon_species(pokedex_id) not null,
+pokemon_name varchar(255) not null,
+iv_hp integer not null,
+iv_attack integer not null,
+iv_defense integer not null,
+iv_sp_attack integer not null,
+iv_sp_defense integer not null,
+iv_speed integer not null,
+level integer not null,
+pokeball_id integer REFERENCES pokeball(pokeball_id) not null
+)
+```
+
+# Developing the game in Python
+
+## Choosing between a new game and conitnuing previous game
 
 At the beginning of the game, when prompted for a new game or continue game, the selection of "new game" starts the trigger in the database to generate a new row in the trainer table that includes a unique trainer ID. The generated trainer_id is then returned to Python to match the future Pokemon encounters with a defined player in the databases.
 
@@ -91,8 +148,6 @@ If a player chooses to continue their previous game, they are directed to input 
                 return trainer_name,trainer_id
 ```
 
-Table SQL code is available here: 
-Insert SQL code is available here: 
 
 ## Encountering Pokemon
 
@@ -192,37 +247,7 @@ In python, once the weighted roll picks a number, it matches that number to the 
         row = cursor.fetchone()
 ```
 
-Once a Pokemon is captured, the live database is used to record that capture. 
-
-The table is here:
-
-```SQL
-Create table trainer_pokemon
-(
-instance_id integer identity Primary Key,
-trainer_id integer REFERENCES trainer(trainer_id) not null,
-pokedex_id integer REFERENCES pokemon_species(pokedex_id) not null,
-pokemon_name varchar(255) not null,
-iv_hp integer not null,
-iv_attack integer not null,
-iv_defense integer not null,
-iv_sp_attack integer not null,
-iv_sp_defense integer not null,
-iv_speed integer not null,
-level integer not null,
-pokeball_id integer REFERENCES pokeball(pokeball_id) not null
-)
-```
-
-And the insert statement runs in Python here:
-
-
-
-Using variations in pokeballs 
-if trainer could choose, they'd just throw the best Pokeball, so it's better to be random. 
-
-
-If Caught:
+### If Caught:
 Once a Pokemon is caught, I built python trigger to create another row in the database with all of the Pokemon's ivs, which creates a sequential instance_id to uniquely define the capture. The trainer_id is also attached to the captured pokemon so that it can be joined to the trainer table for an official Pokedex. 
 
 ```Python
@@ -235,12 +260,49 @@ Once a Pokemon is caught, I built python trigger to create another row in the da
 ```
 
 
-If Pokemon escapes:
+### If Pokemon Escapes:
 
 retry, catch new pokemon, or....
 
 has a 25% chance of running away and forcing you to encounter a different Pokemon. 
 
+
+## Building a pokedex.
+
+Once a pokemon is caught, trainers are given access to their Podex, which catalogs the Pokemon they've caught. It includes both the general information of each captured Pokemon along with their IV_stats that were calculated during the encounter. Each additionall capture adds to the Pokedex, and each successfuly capture gives access to view their newly updated Pokedex.
+
+The pokedex is built by utilizing the trainer_pokemon, pokemon_species, and pokeball tables. The trainer_pokemon table contains the unique captured Pokemon and their IV stats, the pokemon_species table includes the generation information related to each Pokemon (name, type, game of origin, etc.), and the pokeball table gives us the pokeball name used to capture the Pokemon. Even though the caught pokemon of each trainer exists in the trainer_pokeball table, we can use the trainers trainer_id to limit results to their captured pokemon.  
+
+```python
+       cursor.execute("""
+                               select a.pokemon_name,
+                                      a.pokedex_id,
+                                      level,
+                                      type_1,
+                                      case when type_2 = 'NULL' then '' else type_2 end as type_2,
+                                      game_of_origin,
+                                      iv_hp,
+                                      iv_attack,
+                                      iv_defense,
+                                      iv_sp_attack,
+                                      iv_sp_defense,
+                                      iv_speed,
+                                      pokeball_name
+                               from trainer_pokemon a
+                                        join pokemon_species c
+                                             on a.pokedex_id = c.pokedex_id
+                                        join pokeball d
+                                             on a.pokeball_id = d.pokeball_id
+                               where a.trainer_id = ?""", (trainer_id,))
+                pokedex = cursor.fetchall()
+```
+## Game storyline.
+
+After a single capture, professor oak says some shit
+
+After a third capture, the game is successfuly completed, rewarded with a special message from professor Oak and vistory music from the original games. 
+
+The player still has the opporetunity to encounter/capture more pokemon and add to their pokedex. 
 
 Adding a happy ending after capturing 3 Pokemon for professor Oak:
 
