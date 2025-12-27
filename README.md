@@ -10,11 +10,20 @@ Available on Youtube using this link: "YOUTUBE LINK"
 
 Goal of the game:
 - incorperating original Pokemon music (and a soundtrack from the fan-made game, Insurgence) as well as original sound effects like the pokemon wobble sound and the obtaining item sound. 
-- 
+
+## How to Download and play the game:
+
+Step 1: 
+
+Download the sql tables on your SSMS server:
+
+
+
+# Important Development Explanations
+
+This section is dedicated towards explaining how the game is developed. 
 
 ## Developing the backend databases:
-
-
 
 The original pokemon game didn't have to worry about overlapping data coming in from millions of players, since every game was unqiue. However, in a live database, every trainer needs to be uniquely defined, and every action made by a trainer needs that unique signature. 
 
@@ -26,6 +35,15 @@ trainer_name VARCHAR(255) NOT NULL,
 date_created DATETIME NOT NULL
 );
 ```
+
+Next, all 1025 Pokemon that have existed in the Pokemon universe need to be loaded into a table, along with their base stats. These stats are used during the encounter sequence for generating unique stats for each Pokemon. Since manually typing each Pokemon and its stats would take hours, I downloaded on online database into Excel and modified it to fit my table and game. 
+
+You can access the excel table here: 
+
+
+
+
+
 
 At the beginning of the game, when prompted for a new game or continue game, the selection of "new game" starts the trigger in the database to generate a new row in the trainer table that includes a unique trainer ID. The generated trainer_id is then returned to Python to match the future Pokemon encounters with a defined player in the databases.
 
@@ -76,11 +94,11 @@ If a player chooses to continue their previous game, they are directed to input 
 ```
 
 Table SQL code is available here: 
-Inser SQL code is available here: 
+Insert SQL code is available here: 
 
 ## Encountering Pokemon
 
-Encountering a Pokemon in the games usually starts by walking into a section of the map deemed condusive for pokemon spawns, such as grass, caves, and bodies of water. Without an actual character and map to enter these areas, I built a system to encounter a random pokemon instead.
+Encountering a Pokemon in the games usually starts by walking into a section of the map deemed condusive to spawning Pokemon, such as grass, caves, and bodies of water. Without an actual character and map to enter these areas, I built a system to encounter a random pokemon instead.
 
 Since every Pokemon has a unique pokedex_id from 1-1025, I just did a uniform roll for an integer between 1 and 1025. So if the roll landed on 1, the trainer would encounter bulbasaur, who has a unique pokedex_id of 1. For my game inside Python, I downloaded images of each pokemon, named the images their corresponding pokedex_id, matched the integer roll to the picture name, then displayed it with a MatLab import.
 
@@ -148,14 +166,33 @@ Here's the code for running this calculation in python:
         final_speed = calculate_stat(base_speed, speed_iv, level)
 ```
 
-Option to encounter a new pokemon
+If the trainer doesn't want to catch the encountered Pokemon, they always have the option to leave and encounter a new one. In the real games, the ability to leave an encounter depends on whether or not your Pokemon has higher speed than the opposing Pokemon. If your Pokemon's speed is higher, you'll be granted permission to run away. 
 
-### Capturing Pokemon
+## Capturing Pokemon
 
 In all Pokemon games, similar to stats, each pokemon has a defined base catch rate. Once an encounter begins, that catch rate is adjusted through an advanced formula to account for variations in stats like level, hp, and speed. Better, more powerful Pokemon like legendaries are almost always harder to catch than less powerful pokemon. Pokemon with lower capture rates often promote the concept of battling Pokemon with your own Pokemon before capturing. As your Pokemon attacks, the enemies Pokemon's hp is decreases, which then increase that Pokemon's catch rate.
 However, since my game has no battling mechanic and focuses more on just the catching experience, I created a small formula for catching Pokemon, which still uses the original base catch rates but doesn't allow for changes from stat variation of hp reduction by battling. 
 
+### Throwing Pokeballs
 
+Furthermore, during the catching sequence of the game, trainers have the ability to choose the type of pokeballs they throw. Some Pokeballs are inherently better than others, such as the ultraball increasing the catch rate above greatballs. Moreover, some pokeballs have unique effects, the catch rate of any pokemon its thrown at, while other pokeballs are more situational, with abilities tailored to the weather, pokemon type, or location/time of day. 
+
+Unfortuantely, my game doesn't include weather patterns, locations, or any other unique elements that would favor a certain pokeball type over another. In conjunction, given the chance to choose between an evidently strong ball and a weak ball, a player would choose to use the stronger ball every time. Therefore, I have a weighted random roll that determines whether the trainer throws a pokeball, greatball, ultraball, or masterball (100% catch rate), with stronger balls having a lower probability. In the future, I would like to explore giving a finite number of stronger balls to trainer at the start, and allowing trainers to choose what balls they throw. This would encourage a strategy to save stronger balls for stronger Pokemon. 
+
+In python, once the weighted roll picks a number, it matches that number to the Primary Key in the SSMS Pokeball table:
+
+```Python
+        # unique integers associated with each Pokeball type in SSMS: 1-4
+        numbers = [1, 2, 3, 4]
+        # Assign lower probability for stronger pokeballs
+        probabilities = [0.5, 0.3, 0.15, 0.05]
+        # Extract id
+        pokeball_id = random.choices(numbers, probabilities, k=1)[0]
+
+     # Use pokeball_id to extract pokeball information
+        cursor.execute("SELECT * FROM pokeball WHERE pokeball_id = ?", (pokeball_id,))
+        row = cursor.fetchone()
+```
 
 Once a Pokemon is captured, the live database is used to record that capture. 
 
@@ -178,6 +215,10 @@ level integer not null,
 pokeball_id integer REFERENCES pokeball(pokeball_id) not null
 )
 ```
+
+And the insert statement runs in Python here:
+
+
 
 Using variations in pokeballs 
 if trainer could choose, they'd just throw the best Pokeball, so it's better to be random. 
