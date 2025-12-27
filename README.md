@@ -43,8 +43,6 @@ You can access the excel table here:
 
 
 
-
-
 At the beginning of the game, when prompted for a new game or continue game, the selection of "new game" starts the trigger in the database to generate a new row in the trainer table that includes a unique trainer ID. The generated trainer_id is then returned to Python to match the future Pokemon encounters with a defined player in the databases.
 
 ```python
