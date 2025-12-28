@@ -23,7 +23,7 @@ Download the sql tables on your SSMS server:
 
 *This section is dedicated towards explaining how the game is developed* 
 
-## Developing the backend databases:
+## Sequel Server Management Studio (SSMS) Database
 
 The original pokemon game didn't have to worry about overlapping data coming in from millions of players, since every game was unqiue. However, in a live database, every trainer needs to be uniquely defined, and every action made by a trainer needs that unique signature. 
 
@@ -96,11 +96,23 @@ pokeball_id integer REFERENCES pokeball(pokeball_id) not null
 )
 ```
 
-# Developing the game in Python
+# Python Front End
 
-## Choosing between a new game and conitnuing previous game
+### Choosing between a new game and conitnuing previous game
 
-At the beginning of the game, when prompted for a new game or continue game, the selection of "new game" starts the trigger in the database to generate a new row in the trainer table that includes a unique trainer ID. The generated trainer_id is then returned to Python to match the future Pokemon encounters with a defined player in the databases.
+The player is directed to choose between starting a new game or continuing where they left off:
+
+```Python
+new_game_question =(input("\nWould you like to create a new game?\n "
+                          "1) Yes\n "
+                          "2) Continue previous game\n> "
+                          ))
+```
+
+#### New Game:
+
+The selection of "new game" starts the trigger in the database to generate a new row in the trainer table that includes a unique trainer ID. The generated trainer_id is then returned to Python to match the future Pokemon encounters with a defined player in the databases.
+
 
 ```python
     cursor.execute(
@@ -114,6 +126,8 @@ At the beginning of the game, when prompted for a new game or continue game, the
 
     trainer_id = cursor.fetchone()[0]
 ```
+
+#### Continue Game:
 
 If a player chooses to continue their previous game, they are directed to input their trainer_id. If a match was found in the database, their progress would begin where they left off. This does not match how save states work, but it was a good alternative for saving progress in this small-scale project. 
 
@@ -376,7 +390,7 @@ This diagram represents the main gameplay loop used in the game:
 
 <img width="2062" height="1041" alt="Game Loop (2)" src="https://github.com/user-attachments/assets/81a230a7-cf2f-452f-9984-56c062f44014" />
 
-As shown, the menus, encounter system, and catch attempt system are separated. The encounter system is defined as "p" at the end of the encounter process, remaining defined until it is redefined by another encounter trigger. This allows the catch attempt system to utilize only the last encountered Pokemon, exluding any of the Pokemon encountered previously that were also "p". Then, these menus and systems are looped back based on the result of the catch attempt or a menu choice.
+As shown, the menus, encounter system, and catch attempt system are separated. The encounter system is defined as "p" at the end of the encounter process, remaining defined until it is redefined by another encounter trigger. This allows the catch attempt system to use "p" to pull the most recently encountered Pokemon, exluding any of the Pokemon encountered previously that were also "p". Then, these menus and systems are looped back based on the result of the catch attempt or a menu choice.
 
 ## Game storyline triggers.
 
@@ -404,6 +418,7 @@ After the player catches their first Pokemon, Professor Oak is triggered to begi
 
 However, when this menu appears when the capture count is 0, it's slightly adjar considering there's no option 2, only options 1 & 3. I could fix this by switching option 2 and 3, but having the option "View Pokedex" after the option to "Exit Game" sounds strager. So, this menu is a working progress. 
 
+### The Ending
 After a third capture, the game is successfuly completed, rewaring the player with a special message from professor Oak and vistory music from the original games. Once the game is complete, the player still has the opportunity to encounter and capture more pokemon to add to their pokedex. No additional dialogue exists beyond the 3 main captures, however.  
 
 
