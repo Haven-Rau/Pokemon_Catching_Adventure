@@ -9,7 +9,7 @@ The original Pokemon games, Red and Blue, reshaped the video game industry when 
 Available on Youtube using this link: "YOUTUBE LINK"
 
 Goal of the game:
-- incorperating original Pokemon music (and a soundtrack from the fan-made game, Insurgence) as well as original sound effects like the pokemon wobble sound and the obtaining item sound. 
+Professor Oak, a research scientist who makes frequent apperances throughout the original games, is creating a new revive serum to help heal Pokemon. He needs a trainer to help him aquire Pokemon samples, which can only be retrieved from Pokemon after they've been caught in a Pokeball. Your objective is to capture 3 Pokemon and hand them over to professor Oak to complete his research.
 
 ## How to Download and play the game:
 
@@ -21,7 +21,7 @@ Download the sql tables on your SSMS server:
 
 # Important Development Explanations
 
-This section is dedicated towards explaining how the game is developed. 
+*This section is dedicated towards explaining how the game is developed* 
 
 ## Developing the backend databases:
 
@@ -219,7 +219,41 @@ Here's the code for running this calculation in python:
         final_speed = calculate_stat(base_speed, speed_iv, level)
 ```
 
-If the trainer doesn't want to catch the encountered Pokemon, they always have the option to leave and encounter a new one. In the real games, the ability to leave an encounter depends on whether or not your Pokemon has higher speed than the opposing Pokemon. If your Pokemon's speed is higher, you'll be granted permission to run away. 
+Encounters are always triggered by the selection of an encounter option in a menu prompt. 
+
+#### There are 3 different menues that trigger a unique encounter.
+
+- The beginning of the game menu
+```Python
+        start_encounter_question = input("\nStart an encounter?\n "
+                                         "1) Yes\n "
+                                         "2) Exit Game\n> "
+                                         )
+ ```
+- Unsuccessful capture attempt menu:
+```Python
+ another_try = input("\nWould you like to throw another Pokéball? \n "
+                                "1) Yes\n "
+                                "2) Encounter new Pokémon\n> "
+                                ).strip().upper()
+```
+- Successful capture attempt menu
+
+```Python
+print("\nWould you like to encounter a new Pokémon?")
+            print("1) Yes")
+
+            # Gatekeep Pokedex access before capture
+            if capture_count > 0:
+                print("2) View Pokédex")
+
+            print("3) Exit Game")
+
+            again_answer = input("> ").strip()
+```
+
+Each "Encounter new Pokemon" selection restarts the encounter from the beginning, reselecting a Pokemon ID and assigning unique IV stats. 
+
 
 ## Capturing Pokemon
 
@@ -247,8 +281,53 @@ In python, once the weighted roll picks a number, it matches that number to the 
         row = cursor.fetchone()
 ```
 
-### If Caught:
-Once a Pokemon is caught, I built python trigger to create another row in the database with all of the Pokemon's ivs, which creates a sequential instance_id to uniquely define the capture. The trainer_id is also attached to the captured pokemon so that it can be joined to the trainer table for an official Pokedex. 
+After throwing a ball, many different things can happen -
+
+#### 1. The Pokemon broke free
+
+This result is dependent on the uniform roll of the catch rate compared to the catch rate percentage of the Pokemon. If the roll is greater than the catch rate, the Pokemon breaks free
+```Python
+  # Perform the catch roll
+        roll = random.uniform(0, 100)
+        caught = roll < adjusted_catch_rate
+```
+
+#### 2. The Pokemon runs away 
+
+if a trainer has an unsuccessful attempt at capturing a Pokemon, there's a 25% chance the Pokemon will run away and be uncatchable. This returns "pokemon_escaped".
+```Python
+            escape_roll = random.randint(1, 4)
+            if escape_roll == 1:
+                return "pokemon_escaped!"
+```
+
+#### 3. The trainer chooses to run away
+
+If the Pokemon does not run away, the trainer can choose to run away instead, leaving that Pokemon behind to encounter a new one. This returns "you_escaped".
+```Python
+                  another_try = input("\nWould you like to throw another Pokéball? \n "
+                                        "1) Yes\n "
+                                        "2) Encounter new Pokémon\n> "
+                                        ).strip().upper()
+```
+
+#### 4. The Pokemon is caught
+
+This result is also dependent on the same uniform roll as the Pokemon breaking free. If the roll is less than the catch rate, the Pokemon is considered caught. This returns "caught"
+```Python
+  # Perform the catch roll
+        roll = random.uniform(0, 100)
+        caught = roll < adjusted_catch_rate
+```
+
+##### In total, there are three potential things the code can return after throwing a pokeball. Each of them branch off into various triggers
+- "Pokemon_escaped" - Branches into menu asking for new encounter
+- "You_escaped" - Branches into menu asking for new encounter
+- "Caught" - Branches into the caught action, recording the capture in the database and increasing the capture count of their game. 
+
+
+### Successful Pokemon Capture Database Trigger:
+Once a Pokemon is caught, I built python trigger to create another row in the database with all of the Pokemon's information and unique IVs, which creates a sequential instance_id in SSMS. The trainer_id is also attached to the captured pokemon so that it can be joined to the trainer table for an official Pokedex. 
 
 ```Python
           cursor.execute(
@@ -259,15 +338,7 @@ Once a Pokemon is caught, I built python trigger to create another row in the da
             )
 ```
 
-
-### If Pokemon Escapes:
-
-retry, catch new pokemon, or....
-
-has a 25% chance of running away and forcing you to encounter a different Pokemon. 
-
-
-## Building a pokedex.
+## Building a Pokedex of Captured Pokemon.
 
 Once a pokemon is caught, trainers are given access to their Podex, which catalogs the Pokemon they've caught. It includes both the general information of each captured Pokemon along with their IV_stats that were calculated during the encounter. Each additionall capture adds to the Pokedex, and each successfuly capture gives access to view their newly updated Pokedex.
 
@@ -296,14 +367,52 @@ The pokedex is built by utilizing the trainer_pokemon, pokemon_species, and poke
                                where a.trainer_id = ?""", (trainer_id,))
                 pokedex = cursor.fetchall()
 ```
-## Game storyline.
 
-After a single capture, professor oak says some shit
+## Designing the main gameplay loop:
 
-After a third capture, the game is successfuly completed, rewarded with a special message from professor Oak and vistory music from the original games. 
+To allow infinite encounters and catch attempts with pokemon, loops needed to be developed to constantly reroute the player. 
 
-The player still has the opporetunity to encounter/capture more pokemon and add to their pokedex. 
+This diagram represents the main gameplay loop used in the game:
 
-Adding a happy ending after capturing 3 Pokemon for professor Oak:
+<img width="2062" height="1041" alt="Game Loop (2)" src="https://github.com/user-attachments/assets/81a230a7-cf2f-452f-9984-56c062f44014" />
+
+As shown, the menus, encounter system, and catch attempt system are separated. The encounter system is defined as "p" at the end of the encounter process, remaining defined until it is redefined by another encounter trigger. This allows the catch attempt system to utilize only the last encountered Pokemon, exluding any of the Pokemon encountered previously that were also "p". Then, these menus and systems are looped back based on the result of the catch attempt or a menu choice.
+
+## Game storyline triggers.
+
+When starting a new game, each trainer is given a capture count of 0, and each Pokemon capture increases that count. When continuing a previous game, the capture count is defined through a query that counts the total Pokemon caught associated with the trainer_id.
+
+```Python
+      cursor.execute("""select count(pokedex_id) from trainer_pokemon a where a.trainer_id = ?""", (trainer_id,))
+        capture_count = cursor.fetchone()[0]
+```
+
+After the player catches their first Pokemon, Professor Oak is triggered to begin his dialogue and deliver a Pokedex. Once delivered, a trainer has access to the menu options that include viewing their current Pokedex. This is done by gatekeeping the option based on the capture count.
+
+```Python
+ print("\nWould you like to encounter a new Pokémon?")
+            print("1) Yes")
+
+            # Gatekeep Pokedex access before capture
+            if capture_count > 0:
+                print("2) View Pokédex")
+
+            print("3) Exit Game")
+
+            again_answer = input("> ").strip()
+```
+
+However, when this menu appears when the capture count is 0, it's slightly adjar considering there's no option 2, only options 1 & 3. I could fix this by switching option 2 and 3, but having the option "View Pokedex" after the option to "Exit Game" sounds strager. So, this menu is a working progress. 
+
+After a third capture, the game is successfuly completed, rewaring the player with a special message from professor Oak and vistory music from the original games. Once the game is complete, the player still has the opportunity to encounter and capture more pokemon to add to their pokedex. No additional dialogue exists beyond the 3 main captures, however.  
+
+
+
+
+
+
+
+
+
 
 
