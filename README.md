@@ -19,6 +19,9 @@ Download the sql tables on your SSMS server:
 
 [Table Creation.sql](https://github.com/user-attachments/files/24363922/Table.Creation.sql)
 
+Download Excel sheet with Pokemon data:
+
+
 
 # Important Development Explanations
 
@@ -50,7 +53,7 @@ date_created DATETIME NOT NULL
 
 #### Pokemon_Species -
 
-All 1025 Pokemon that have existed in the Pokemon universe need to be loaded into a table, along with their base stats. These stats are used during the encounter sequence for generating unique stats for each Pokemon. 
+All 1025 Pokemon that have existed in the Pokemon universe need to be loaded into a table, along with their base stats. These stats are used during the encounter sequence for generating unique stats for each Pokemon. This is a standalone table with no relationships to other tables.
 
 ```sql
 Create table pokemon_species
