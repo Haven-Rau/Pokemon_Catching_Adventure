@@ -1,0 +1,1026 @@
+﻿Pokedex Number,Pokemon Name,Legendary Type,Primary Type,Secondary Type,Game(s) of Origin,Health Stat,Attack Stat,Defense Stat,Special Attack Stat,Special Defense Stat,Speed Stat,Base Level ,Catch Rate,Pre-Evolution Pokemon Id,Evolution Details
+1,Bulbasaur,NULL,Grass,Poison,Red,45,49,49,65,65,45,0,45,NULL,NULL
+2,Ivysaur,NULL,Grass,Poison,Red,60,62,63,80,80,60,0,45,1,Level 16
+3,Venusaur,NULL,Grass,Poison,Red,80,82,83,100,100,80,0,45,2,Level 32
+4,Charmander,NULL,Fire,NULL,Red,39,52,43,60,50,65,0,45,NULL,NULL
+5,Charmeleon,NULL,Fire,NULL,Red,58,64,58,80,65,80,0,45,5,Level 16
+6,Charizard,NULL,Fire,Flying,Red,78,84,78,109,85,100,0,45,6,Level 36
+7,Squirtle,NULL,Water,NULL,Red,44,48,65,50,64,43,0,45,NULL,NULL
+8,Wartortle,NULL,Water,NULL,Red,59,63,80,65,80,58,0,45,10,Level 16
+9,Blastoise,NULL,Water,NULL,Red,79,83,100,85,105,78,0,45,11,Level 36
+10,Caterpie,NULL,Bug,NULL,Red,45,30,35,20,20,45,0,255,NULL,NULL
+11,Metapod,NULL,Bug,NULL,Red,50,20,55,25,25,30,0,120,32,Level 7
+12,Butterfree,NULL,Bug,Flying,Red,60,45,50,90,80,70,0,45,23,Level 10
+13,Weedle,NULL,Bug,Poison,Red,40,35,30,20,20,50,0,255,NULL,NULL
+14,Kakuna,NULL,Bug,Poison,Red,45,25,50,25,25,35,0,120,31,Level 7
+15,Beedrill,NULL,Bug,Poison,Red,65,90,40,45,80,75,0,45,30,Level 10
+16,Pidgey,NULL,Normal,Flying,Red,40,45,40,35,35,56,0,255,NULL,NULL
+17,Pidgeotto,NULL,Normal,Flying,Red,63,60,55,50,50,71,0,120,76,Level 18
+18,Pidgeot,NULL,Normal,Flying,Red,83,80,75,70,70,101,0,45,77,Level 36
+19,Rattata,NULL,Normal,NULL,Red,30,56,35,25,35,72,0,255,NULL,NULL
+20,Raticate,NULL,Normal,NULL,Red,55,81,60,50,70,97,0,127,80,Level 20
+21,Spearow,NULL,Normal,Flying,Red,40,60,30,31,31,70,0,255,NULL,NULL
+22,Fearow,NULL,Normal,Flying,Red,65,90,65,61,61,100,0,90,84,Level 20
+23,Ekans,NULL,Poison,NULL,Red,35,60,44,40,54,55,0,255,NULL,NULL
+24,Arbok,NULL,Poison,NULL,Red,60,95,69,65,79,80,0,90,86,Level 22
+25,Pikachu,NULL,Electric,NULL,Red,35,55,40,50,50,90,0,190,88,NULL
+26,Raichu,NULL,Electric,NULL,Red,60,90,55,90,80,110,0,75,89,Thunder Stone
+27,Sandshrew,NULL,Ground,NULL,Red,50,75,85,20,30,40,0,255,NULL,NULL
+28,Sandslash,NULL,Ground,NULL,Red,75,100,110,45,55,65,0,90,92,Level 22
+29,Nidoran (Female),NULL,Poison,NULL,Red,55,47,52,40,40,41,0,235,NULL,NULL
+30,Nidorina,NULL,Poison,NULL,Red,70,62,67,55,55,56,0,120,33,Level 16
+31,Nidoqueen,NULL,Poison,Ground,Red,90,92,87,75,85,76,0,45,17,Moon Stone
+32,Nidoran (Male),NULL,Poison,NULL,Red,46,57,40,40,40,50,0,235,NULL,NULL
+33,Nidorino,NULL,Poison,NULL,Red,61,72,57,55,55,65,0,120,48,Level 16
+34,Nidoking,NULL,Poison,Ground,Red,81,102,77,85,75,85,0,45,49,Moon Stone
+35,Clefairy,NULL,Fairy,NULL,Red,70,45,48,60,65,35,0,150,51,NULL
+36,Clefable,NULL,Fairy,NULL,Red,95,70,73,95,90,60,0,25,52,Moon Stone
+37,Vulpix,NULL,Fire,NULL,Red,38,41,40,50,65,65,0,190,NULL,NULL
+38,Ninetales,NULL,Fire,NULL,Red,73,76,75,81,100,100,0,75,54,Fire Stone
+39,Jigglypuff,NULL,Normal,Fairy,Red,115,45,20,45,25,20,0,170,58,NULL
+40,Wigglytuff,NULL,Normal,Fairy,Red,140,70,45,85,50,45,0,50,59,Moon Stone
+41,Zubat,NULL,Poison,Flying,Red,40,45,35,30,40,55,0,255,NULL,NULL
+42,Golbat,NULL,Poison,Flying,Red,75,80,70,65,75,95,0,90,61,Level 22
+43,Oddish,NULL,Grass,Poison,Red,45,50,55,75,65,30,0,255,NULL,NULL
+44,Gloom,NULL,Grass,Poison,Red,60,65,70,85,75,40,0,120,64,Level 21
+45,Vileplume,NULL,Grass,Poison,Red,75,80,85,110,90,50,0,45,65,Leaf Stone
+46,Paras,NULL,Bug,Grass,Red,35,70,55,45,55,25,0,190,NULL,NULL
+47,Parasect,NULL,Bug,Grass,Red,60,95,80,60,80,30,0,75,68,Level 24
+48,Venonat,NULL,Bug,Poison,Red,60,55,50,40,55,45,0,190,NULL,NULL
+49,Venomoth,NULL,Bug,Poison,Red,70,65,60,90,75,90,0,75,70,Level 31
+50,Diglett,NULL,Ground,NULL,Red,10,55,25,35,45,95,0,255,NULL,NULL
+51,Dugtrio,NULL,Ground,NULL,Red,35,100,50,50,70,120,0,50,72,Level 26
+52,Meowth,NULL,Normal,NULL,Red,40,45,35,40,40,90,0,255,NULL,NULL
+53,Persian,NULL,Normal,NULL,Red,65,70,60,65,65,115,0,90,96,Level 28
+54,Psyduck,NULL,Water,NULL,Red,50,52,48,65,50,55,0,190,NULL,NULL
+55,Golduck,NULL,Water,NULL,Red,80,82,78,95,80,85,0,75,102,Level 33
+56,Mankey,NULL,Fighting,NULL,Red,40,80,35,35,45,70,0,190,NULL,NULL
+57,Primeape,NULL,Fighting,NULL,Red,65,105,60,60,70,95,0,75,895,Level 28
+58,Growlithe,NULL,Fire,NULL,Red,55,70,45,70,50,60,0,190,NULL,NULL
+59,Arcanine,NULL,Fire,NULL,Red,90,110,80,100,80,95,0,75,949,Fire Stone
+60,Poliwag,NULL,Water,NULL,Red,40,50,40,40,40,90,0,255,NULL,NULL
+61,Poliwhirl,NULL,Water,NULL,Red,65,65,65,50,50,90,0,120,971,Level 25
+62,Poliwrath,NULL,Water,Fighting,Red,90,95,95,70,90,70,0,45,982,Water Stone
+63,Abra,NULL,Psychic,NULL,Red,25,20,15,105,55,90,0,200,NULL,NULL
+64,Kadabra,NULL,Psychic,NULL,Red,40,35,30,120,70,105,0,100,1004,Level 16
+65,Alakazam,NULL,Psychic,NULL,Red,55,50,45,135,95,120,0,50,1015,NULL
+66,Machop,NULL,Fighting,NULL,Red,70,80,50,35,35,35,0,180,NULL,NULL
+67,Machoke,NULL,Fighting,NULL,Red,80,100,70,50,60,45,0,90,1076,Level 28
+68,Machamp,NULL,Fighting,NULL,Red,90,130,80,65,85,55,0,45,1087,NULL
+69,Bellsprout,NULL,Grass,Poison,Red,50,75,35,70,30,40,0,255,NULL,NULL
+70,Weepinbell,NULL,Grass,Poison,Red,65,90,50,85,45,55,0,120,1109,Level 21
+71,Victreebel,NULL,Grass,Poison,Red,80,105,65,100,70,70,0,45,1128,Leaf Stone
+72,Tentacool,NULL,Water,Poison,Red,40,40,35,50,100,70,0,190,NULL,NULL
+73,Tentacruel,NULL,Water,Poison,Red,80,70,65,80,120,100,0,60,1150,Level 30
+74,Geodude,NULL,Rock,Ground,Red,40,80,100,30,30,20,0,255,NULL,NULL
+75,Graveler,NULL,Rock,Ground,Red,55,95,115,45,45,35,0,120,1265,Level 25
+76,Golem,NULL,Rock,Ground,Red,80,120,130,55,65,45,0,45,1276,NULL
+77,Ponyta,NULL,Fire,NULL,Red,50,85,55,65,65,90,0,190,NULL,NULL
+78,Rapidash,NULL,Fire,NULL,Red,65,100,70,80,80,105,0,60,1297,Level 40
+79,Slowpoke,NULL,Water,Psychic,Red,90,65,65,40,40,15,0,190,NULL,NULL
+80,Slowbro,NULL,Water,Psychic,Red,95,75,110,100,80,30,0,75,1319,Level 37
+81,Magnemite,NULL,Electric,Steel,Red,25,35,70,95,55,45,0,190,NULL,NULL
+82,Magneton,NULL,Electric,Steel,Red,50,60,95,120,70,70,0,60,46,Level 30
+83,Farfetch'd,NULL,Normal,Flying,Red,52,90,55,58,62,60,0,45,NULL,NULL
+84,Doduo,NULL,Normal,Flying,Red,35,85,45,35,35,75,0,190,NULL,NULL
+85,Dodrio,NULL,Normal,Flying,Red,60,110,70,60,60,110,0,45,1343,Level 31
+86,Seel,NULL,Water,NULL,Red,65,45,55,45,70,45,0,190,NULL,NULL
+87,Dewgong,NULL,Water,Ice,Red,90,70,80,70,95,70,0,75,1345,Level 34
+88,Grimer,NULL,Poison,NULL,Red,80,80,50,40,50,25,0,190,NULL,NULL
+89,Muk,NULL,Poison,NULL,Red,105,105,75,65,100,50,0,75,1347,Level 38
+90,Shellder,NULL,Water,NULL,Red,30,65,100,45,25,40,0,190,NULL,NULL
+91,Cloyster,NULL,Water,Ice,Red,50,95,180,85,45,70,0,60,1349,Water Stone
+92,Gastly,NULL,Ghost,Poison,Red,30,35,30,100,35,80,0,190,NULL,NULL
+93,Haunter,NULL,Ghost,Poison,Red,45,50,45,115,55,95,0,90,1351,Level 25
+94,Gengar,NULL,Ghost,Poison,Red,60,65,60,130,75,110,0,45,1352,NULL
+95,Onix,NULL,Rock,Ground,Red,35,45,160,30,45,70,0,45,NULL,NULL
+96,Drowzee,NULL,Psychic,NULL,Red,60,48,45,43,90,42,0,190,NULL,NULL
+97,Hypno,NULL,Psychic,NULL,Red,85,73,70,73,115,67,0,75,1355,Level 26
+98,Krabby,NULL,Water,NULL,Red,30,105,90,25,25,50,0,225,NULL,NULL
+99,Kingler,NULL,Water,NULL,Red,55,130,115,50,50,75,0,60,1357,Level 28
+100,Voltorb,NULL,Electric,NULL,Red,40,30,50,55,55,100,0,190,NULL,NULL
+101,Electrode,NULL,Electric,NULL,Red,60,50,70,80,80,150,0,60,47,Level 30
+102,Exeggcute,NULL,Grass,Psychic,Red,60,40,80,60,45,40,0,90,NULL,NULL
+103,Exeggutor,NULL,Grass,Psychic,Red,95,95,85,125,75,55,0,45,136,Leaf Stone
+104,Cubone,NULL,Ground,NULL,Red,50,50,95,40,50,35,0,190,NULL,NULL
+105,Marowak,NULL,Ground,NULL,Red,60,80,110,50,80,45,0,75,138,Level 28
+106,Hitmonlee,NULL,Fighting,NULL,Red,50,120,53,35,110,87,0,45,360,Level 20 With Attack > Defense
+107,Hitmonchan,NULL,Fighting,NULL,Red,50,105,79,35,110,76,0,45,360,Level 20 With Attack < Defense
+108,Lickitung,NULL,Normal,NULL,Red,90,55,75,60,75,30,0,45,NULL,NULL
+109,Koffing,NULL,Poison,NULL,Red,40,65,95,60,45,35,0,190,NULL,NULL
+110,Weezing,NULL,Poison,NULL,Red,65,90,120,85,70,60,0,60,143,Level 35
+111,Rhyhorn,NULL,Ground,Rock,Red,80,85,95,30,30,25,0,120,NULL,NULL
+112,Rhydon,NULL,Ground,Rock,Red,105,130,120,45,45,40,0,60,145,Level 42
+113,Chansey,NULL,Normal,NULL,Red,250,5,5,35,105,50,0,30,638,Holding An Oval Stone During The Day
+114,Tangela,NULL,Grass,NULL,Red,65,55,115,100,40,60,0,45,NULL,NULL
+115,Kangaskhan,NULL,Normal,NULL,Red,105,95,80,40,80,90,0,45,NULL,NULL
+116,Horsea,NULL,Water,NULL,Red,30,40,70,70,25,60,0,225,NULL,NULL
+117,Seadra,NULL,Water,NULL,Red,55,65,95,95,45,85,0,75,212,Level 32
+118,Goldeen,NULL,Water,NULL,Red,45,67,60,35,50,63,0,225,NULL,NULL
+119,Seaking,NULL,Water,NULL,Red,80,92,65,65,80,68,0,60,214,Level 33
+120,Staryu,NULL,Water,NULL,Red,30,45,55,70,55,85,0,225,NULL,NULL
+121,Starmie,NULL,Water,Psychic,Red,60,75,85,100,85,115,0,60,216,Water Stone
+122,Mr. Mime,NULL,Psychic,Fairy,Red,40,45,65,100,120,90,0,45,637,Knowing Mimic
+123,Scyther,NULL,Bug,Flying,Red,70,110,80,55,80,105,0,45,NULL,NULL
+124,Jynx,NULL,Ice,Psychic,Red,65,50,35,115,95,95,0,45,362,Level 30
+125,Electabuzz,NULL,Electric,NULL,Red,65,83,57,95,85,105,0,45,363,Level 30
+126,Magmar,NULL,Fire,NULL,Red,65,95,57,100,85,93,0,45,364,Level 30
+127,Pinsir,NULL,Bug,NULL,Red,65,125,100,55,70,85,0,45,NULL,NULL
+128,Tauros,NULL,Normal,NULL,Red,75,100,95,40,70,110,0,45,NULL,NULL
+129,Magikarp,NULL,Water,NULL,Red,20,10,55,15,20,80,0,255,NULL,NULL
+130,Gyarados,NULL,Water,Flying,Red,95,125,79,60,100,81,0,45,225,Level 20
+131,Lapras,NULL,Water,Ice,Red,130,85,80,85,95,60,0,45,NULL,NULL
+132,Ditto,NULL,Normal,NULL,Red,48,48,48,48,48,48,0,35,NULL,NULL
+133,Eevee,NULL,Normal,NULL,Red,55,55,50,45,65,55,0,45,NULL,NULL
+134,Vaporeon,NULL,Water,NULL,Red,130,65,60,110,95,65,0,45,228,Water Stone
+135,Jolteon,NULL,Electric,NULL,Red,65,65,60,110,95,130,0,45,228,Thunder Stone
+136,Flareon,NULL,Fire,NULL,Red,65,130,60,95,110,65,0,45,228,Fire Stone
+137,Porygon,NULL,Normal,NULL,Red,65,60,70,85,75,40,0,45,NULL,NULL
+138,Omanyte,NULL,Rock,Water,Red,35,40,100,90,55,35,0,45,NULL,NULL
+139,Omastar,NULL,Rock,Water,Red,70,60,125,115,70,55,0,45,233,Level 40
+140,Kabuto,NULL,Rock,Water,Red,30,80,90,55,45,55,0,45,NULL,NULL
+141,Kabutops,NULL,Rock,Water,Red,60,115,105,65,70,80,0,45,235,Level 40
+142,Aerodactyl,NULL,Rock,Flying,Red,80,105,65,60,75,130,0,45,NULL,NULL
+143,Snorlax,NULL,Normal,NULL,Red,160,110,65,65,110,30,0,25,644,NULL
+144,Articuno,Sub-Legendary,Ice,Flying,Red,90,85,100,95,125,85,0,3,NULL,NULL
+145,Zapdos,Sub-Legendary,Electric,Flying,Red,90,90,85,125,90,100,0,3,NULL,NULL
+146,Moltres,Sub-Legendary,Fire,Flying,Red,90,100,90,125,85,90,0,3,NULL,NULL
+147,Dratini,NULL,Dragon,NULL,Red,41,64,45,50,50,50,0,45,NULL,NULL
+148,Dragonair,NULL,Dragon,NULL,Red,61,84,65,70,70,70,0,45,242,Level 30
+149,Dragonite,NULL,Dragon,Flying,Red,91,134,95,100,100,80,0,45,243,Level 55
+150,Mewtwo,Legendary,Psychic,NULL,Red,106,110,90,154,90,130,0,3,NULL,NULL
+151,Mew,Mythical,Psychic,NULL,Red,100,100,100,100,100,100,0,45,NULL,NULL
+152,Chikorita,NULL,Grass,NULL,Gold,45,49,65,49,65,45,0,45,NULL,NULL
+153,Bayleef,NULL,Grass,NULL,Gold,60,62,80,63,80,60,0,45,245,Level 16
+154,Meganium,NULL,Grass,NULL,Gold,80,82,100,83,100,80,0,45,246,Level 32
+155,Cyndaquil,NULL,Fire,NULL,Gold,39,52,43,60,50,65,0,45,NULL,NULL
+156,Quilava,NULL,Fire,NULL,Gold,58,64,58,80,65,80,0,45,248,Level 14
+157,Typhlosion,NULL,Fire,NULL,Gold,78,84,78,109,85,100,0,45,249,Level 36
+158,Totodile,NULL,Water,NULL,Gold,50,65,64,44,48,43,0,45,NULL,NULL
+159,Croconaw,NULL,Water,NULL,Gold,65,80,80,59,63,58,0,45,251,Level 18
+160,Feraligatr,NULL,Water,NULL,Gold,85,105,100,79,83,78,0,45,252,Level 30
+161,Sentret,NULL,Normal,NULL,Gold,35,46,34,35,45,20,0,255,NULL,NULL
+162,Furret,NULL,Normal,NULL,Gold,85,76,64,45,55,90,0,90,254,Level 15
+163,Hoothoot,NULL,Normal,Flying,Gold,60,30,30,36,56,50,0,255,NULL,NULL
+164,Noctowl,NULL,Normal,Flying,Gold,100,50,50,86,96,70,0,90,256,Level 20
+165,Ledyba,NULL,Bug,Flying,Gold,40,20,30,40,80,55,0,255,NULL,NULL
+166,Ledian,NULL,Bug,Flying,Gold,55,35,50,55,110,85,0,90,258,Level 18
+167,Spinarak,NULL,Bug,Poison,Gold,40,60,40,40,40,30,0,255,NULL,NULL
+168,Ariados,NULL,Bug,Poison,Gold,70,90,70,60,70,40,0,90,260,Level 22
+169,Crobat,NULL,Poison,Flying,Gold,85,90,80,70,80,130,0,90,62,NULL
+170,Chinchou,NULL,Water,Electric,Gold,75,38,38,56,56,67,0,190,NULL,NULL
+171,Lanturn,NULL,Water,Electric,Gold,125,58,58,76,76,67,0,75,262,Level 27
+172,Pichu,NULL,Electric,NULL,Gold,20,40,15,35,35,60,0,190,NULL,NULL
+173,Cleffa,NULL,Fairy,NULL,Gold,50,25,28,45,55,15,0,150,NULL,NULL
+174,Igglybuff,NULL,Normal,Fairy,Gold,90,30,15,40,20,15,0,170,NULL,NULL
+175,Togepi,NULL,Fairy,NULL,Gold,35,20,65,40,65,20,0,190,NULL,NULL
+176,Togetic,NULL,Fairy,Flying,Gold,55,40,85,80,105,40,0,75,264,NULL
+177,Natu,NULL,Psychic,Flying,Gold,40,50,45,70,45,70,0,190,NULL,NULL
+178,Xatu,NULL,Psychic,Flying,Gold,65,75,70,95,70,95,0,75,266,Level 25
+179,Mareep,NULL,Electric,NULL,Gold,55,40,40,65,45,35,0,235,NULL,NULL
+180,Flaaffy,NULL,Electric,NULL,Gold,70,55,55,80,60,45,0,120,278,Level 15
+181,Ampharos,NULL,Electric,NULL,Gold,90,75,85,115,90,55,0,45,279,Level 30
+182,Bellossom,NULL,Grass,NULL,Gold,75,80,95,90,100,50,0,45,65,Sun Stone
+183,Marill,NULL,Water,Fairy,Gold,70,20,50,20,50,40,0,190,426,NULL
+184,Azumarill,NULL,Water,Fairy,Gold,100,50,80,60,80,50,0,75,283,Level 18
+185,Sudowoodo,NULL,Rock,NULL,Gold,70,110,115,30,65,30,0,65,636,Knowing Mimic
+186,Politoed,NULL,Water,NULL,Gold,90,75,75,90,100,70,0,45,982,King's Rock
+187,Hoppip,NULL,Grass,Flying,Gold,35,35,40,35,55,50,0,255,NULL,NULL
+188,Skiploom,NULL,Grass,Flying,Gold,55,45,50,45,65,80,0,120,287,Level 18
+189,Jumpluff,NULL,Grass,Flying,Gold,75,55,70,55,95,110,0,45,288,Level 27
+190,Aipom,NULL,Normal,NULL,Gold,55,70,55,40,55,85,0,45,NULL,NULL
+191,Sunkern,NULL,Grass,NULL,Gold,30,30,30,30,30,30,0,235,NULL,NULL
+192,Sunflora,NULL,Grass,NULL,Gold,75,75,55,105,85,30,0,120,291,Sun Stone
+193,Yanma,NULL,Bug,Flying,Gold,65,65,45,75,45,95,0,75,NULL,NULL
+194,Wooper,NULL,Water,Ground,Gold,55,45,45,25,25,15,0,255,NULL,NULL
+195,Quagsire,NULL,Water,Ground,Gold,95,85,85,65,65,35,0,90,294,Level 20
+196,Espeon,NULL,Psychic,NULL,Gold,65,65,60,130,95,110,0,45,228,During The Day
+197,Umbreon,NULL,Dark,NULL,Gold,95,65,110,60,130,65,0,45,228,During The Night
+198,Murkrow,NULL,Dark,Flying,Gold,60,85,42,85,42,91,0,30,NULL,NULL
+199,Slowking,NULL,Water,Psychic,Gold,95,75,80,100,110,30,0,70,1319,King's Rock
+200,Misdreavus,NULL,Ghost,NULL,Gold,60,60,60,85,85,85,0,45,NULL,NULL
+201,Unown,NULL,Psychic,NULL,Gold,48,72,48,72,48,48,0,225,NULL,NULL
+202,Wobbuffet,NULL,Psychic,NULL,Gold,190,33,58,33,58,33,0,45,488,Level 15
+203,Girafarig,NULL,Normal,Psychic,Gold,70,80,65,90,65,85,0,60,NULL,NULL
+204,Pineco,NULL,Bug,NULL,Gold,50,65,90,35,35,15,0,190,NULL,NULL
+205,Forretress,NULL,Bug,Steel,Gold,75,90,140,60,60,40,0,75,328,Level 31
+206,Dunsparce,NULL,Normal,NULL,Gold,100,70,70,65,65,45,0,190,NULL,NULL
+207,Gligar,NULL,Ground,Flying,Gold,65,75,105,35,65,85,0,60,NULL,NULL
+208,Steelix,NULL,Steel,Ground,Gold,75,85,200,55,65,30,0,25,1354,Metal Coat
+209,Snubbull,NULL,Fairy,NULL,Gold,60,80,50,40,40,30,0,190,NULL,NULL
+210,Granbull,NULL,Fairy,NULL,Gold,90,120,75,60,60,45,0,75,333,Level 23
+211,Qwilfish,NULL,Water,Poison,Gold,65,95,85,55,55,85,0,45,NULL,NULL
+212,Scizor,NULL,Bug,Steel,Gold,70,130,100,55,80,65,0,25,219,Metal Coat
+213,Shuckle,NULL,Bug,Rock,Gold,20,10,230,10,230,5,0,190,NULL,NULL
+214,Heracross,NULL,Bug,Fighting,Gold,80,125,75,40,95,85,0,45,NULL,NULL
+215,Sneasel,NULL,Dark,Ice,Gold,55,95,55,35,75,115,0,60,NULL,NULL
+216,Teddiursa,NULL,Normal,NULL,Gold,60,80,50,50,50,40,0,120,NULL,NULL
+217,Ursaring,NULL,Normal,NULL,Gold,90,130,75,75,75,55,0,60,340,Level 30
+218,Slugma,NULL,Fire,NULL,Gold,40,40,40,70,40,20,0,190,NULL,NULL
+219,Magcargo,NULL,Fire,Rock,Gold,60,50,120,90,80,30,0,75,342,Level 38
+220,Swinub,NULL,Ice,Ground,Gold,50,50,40,30,30,50,0,225,NULL,NULL
+221,Piloswine,NULL,Ice,Ground,Gold,100,100,80,60,60,50,0,75,344,Level 33
+222,Corsola,NULL,Water,Rock,Gold,65,55,95,65,95,35,0,60,NULL,NULL
+223,Remoraid,NULL,Water,NULL,Gold,35,65,35,65,35,65,0,190,NULL,NULL
+224,Octillery,NULL,Water,NULL,Gold,75,105,75,105,75,45,0,75,347,Level 25
+225,Delibird,NULL,Ice,Flying,Gold,45,55,45,65,45,75,0,45,NULL,NULL
+226,Mantine,NULL,Water,Flying,Gold,85,40,70,80,140,70,0,25,656,With Remoraid In The Party
+227,Skarmory,NULL,Steel,Flying,Gold,65,80,140,40,70,70,0,25,NULL,NULL
+228,Houndour,NULL,Dark,Fire,Gold,45,60,30,80,50,65,0,120,NULL,NULL
+229,Houndoom,NULL,Dark,Fire,Gold,75,90,50,110,80,95,0,45,352,Level 24
+230,Kingdra,NULL,Water,Dragon,Gold,75,95,95,95,95,85,0,45,213,Dragon Scale
+231,Phanpy,NULL,Ground,NULL,Gold,90,60,60,40,40,40,0,120,NULL,NULL
+232,Donphan,NULL,Ground,NULL,Gold,90,120,120,60,60,50,0,60,355,Level 25
+233,Porygon2,NULL,Normal,NULL,Gold,85,80,90,105,95,60,0,45,232,Upgrade
+234,Stantler,NULL,Normal,NULL,Gold,73,95,62,85,65,85,0,45,NULL,NULL
+235,Smeargle,NULL,Normal,NULL,Gold,55,20,35,20,45,75,0,45,NULL,NULL
+236,Tyrogue,NULL,Fighting,NULL,Gold,35,35,35,35,35,35,0,75,NULL,NULL
+237,Hitmontop,NULL,Fighting,NULL,Gold,50,95,95,35,110,70,0,45,360,Level 20 With Attack = Defense
+238,Smoochum,NULL,Ice,Psychic,Gold,45,30,15,85,65,65,0,45,NULL,NULL
+239,Elekid,NULL,Electric,NULL,Gold,45,63,37,65,55,95,0,45,NULL,NULL
+240,Magby,NULL,Fire,NULL,Gold,45,75,37,70,55,83,0,45,NULL,NULL
+241,Miltank,NULL,Normal,NULL,Gold,95,80,105,40,70,100,0,45,NULL,NULL
+242,Blissey,NULL,Normal,NULL,Gold,255,10,10,75,135,55,0,30,147,NULL
+243,Raikou,Sub-Legendary,Electric,NULL,Gold,90,85,75,115,100,115,0,3,NULL,NULL
+244,Entei,Sub-Legendary,Fire,NULL,Gold,115,115,85,90,75,100,0,3,NULL,NULL
+245,Suicune,Sub-Legendary,Water,NULL,Gold,100,75,115,90,115,85,0,3,NULL,NULL
+246,Larvitar,NULL,Rock,Ground,Gold,50,64,50,45,50,41,0,45,NULL,NULL
+247,Pupitar,NULL,Rock,Ground,Gold,70,84,70,65,70,51,0,45,370,Level 30
+248,Tyranitar,NULL,Rock,Dark,Gold,100,134,110,95,100,61,0,45,371,Level 55
+249,Lugia,Legendary,Psychic,Flying,Gold,106,90,130,90,154,110,0,3,NULL,NULL
+250,Ho-Oh,Legendary,Fire,Flying,Gold,106,130,90,110,154,90,0,3,NULL,NULL
+251,Celebi,Mythical,Psychic,Grass,Gold,100,100,100,100,100,100,0,45,NULL,NULL
+252,Treecko,NULL,Grass,NULL,Ruby,40,45,35,65,55,70,0,45,NULL,NULL
+253,Grovyle,NULL,Grass,NULL,Ruby,50,65,45,85,65,95,0,45,380,Level 16
+254,Sceptile,NULL,Grass,NULL,Ruby,70,85,65,105,85,120,0,45,381,Level 36
+255,Torchic,NULL,Fire,NULL,Ruby,45,60,40,70,50,45,0,45,NULL,NULL
+256,Combusken,NULL,Fire,Fighting,Ruby,60,85,60,85,60,55,0,45,383,Level 16
+257,Blaziken,NULL,Fire,Fighting,Ruby,80,120,70,110,70,80,0,45,384,Level 36
+258,Mudkip,NULL,Water,NULL,Ruby,50,70,50,50,50,40,0,45,NULL,NULL
+259,Marshtomp,NULL,Water,Ground,Ruby,70,85,70,60,70,50,0,45,386,Level 16
+260,Swampert,NULL,Water,Ground,Ruby,100,110,90,85,90,60,0,45,387,Level 36
+261,Poochyena,NULL,Dark,NULL,Ruby,35,55,35,30,30,35,0,255,NULL,NULL
+262,Mightyena,NULL,Dark,NULL,Ruby,70,90,70,60,60,70,0,127,389,Level 18
+263,Zigzagoon,NULL,Normal,NULL,Ruby,38,30,41,30,41,60,0,255,NULL,NULL
+264,Linoone,NULL,Normal,NULL,Ruby,78,70,61,50,61,100,0,90,391,Level 20
+265,Wurmple,NULL,Bug,NULL,Ruby,45,45,35,20,30,20,0,255,NULL,NULL
+266,Silcoon,NULL,Bug,NULL,Ruby,50,35,55,25,25,15,0,120,393,Level 7 Based On Personality Value
+267,Beautifly,NULL,Bug,Flying,Ruby,60,70,50,100,50,65,0,45,394,Level 10
+268,Cascoon,NULL,Bug,NULL,Ruby,50,35,55,25,25,15,0,120,393,Level 7 Based On Personality Value
+269,Dustox,NULL,Bug,Poison,Ruby,60,50,70,50,90,65,0,45,396,Level 10
+270,Lotad,NULL,Water,Grass,Ruby,40,30,30,40,50,30,0,255,NULL,NULL
+271,Lombre,NULL,Water,Grass,Ruby,60,50,50,60,70,50,0,120,398,Level 14
+272,Ludicolo,NULL,Water,Grass,Ruby,80,70,70,90,100,70,0,45,399,Water Stone
+273,Seedot,NULL,Grass,NULL,Ruby,40,40,50,30,30,30,0,255,NULL,NULL
+274,Nuzleaf,NULL,Grass,Dark,Ruby,70,70,40,60,40,60,0,120,401,Level 14
+275,Shiftry,NULL,Grass,Dark,Ruby,90,100,60,90,60,80,0,45,402,Leaf Stone
+276,Taillow,NULL,Normal,Flying,Ruby,40,55,30,30,30,85,0,200,NULL,NULL
+277,Swellow,NULL,Normal,Flying,Ruby,60,85,60,75,50,125,0,45,404,Level 22
+278,Wingull,NULL,Water,Flying,Ruby,40,30,30,55,30,85,0,190,NULL,NULL
+279,Pelipper,NULL,Water,Flying,Ruby,60,50,100,95,70,65,0,45,406,Level 25
+280,Ralts,NULL,Psychic,Fairy,Ruby,28,25,25,45,35,40,0,235,NULL,NULL
+281,Kirlia,NULL,Psychic,Fairy,Ruby,38,35,35,65,55,50,0,120,408,Level 20
+282,Gardevoir,NULL,Psychic,Fairy,Ruby,68,65,65,125,115,80,0,45,409,Level 30
+283,Surskit,NULL,Bug,Water,Ruby,40,30,32,50,52,65,0,200,NULL,NULL
+284,Masquerain,NULL,Bug,Flying,Ruby,70,60,62,100,82,80,0,75,411,Level 22
+285,Shroomish,NULL,Grass,NULL,Ruby,60,40,60,40,60,35,0,255,NULL,NULL
+286,Breloom,NULL,Grass,Fighting,Ruby,60,130,80,60,60,70,0,90,413,Level 23
+287,Slakoth,NULL,Normal,NULL,Ruby,60,60,60,35,35,30,0,255,NULL,NULL
+288,Vigoroth,NULL,Normal,NULL,Ruby,80,80,80,55,55,90,0,120,415,Level 18
+289,Slaking,NULL,Normal,NULL,Ruby,150,160,100,95,65,100,0,45,416,Level 36
+290,Nincada,NULL,Bug,Ground,Ruby,31,45,90,30,30,40,0,255,NULL,NULL
+291,Ninjask,NULL,Bug,Flying,Ruby,61,90,45,50,50,160,0,120,418,Level 20
+292,Shedinja,NULL,Bug,Ghost,Ruby,1,90,45,30,30,40,0,45,418,Have A Pokeball And Empty Space In Party
+293,Whismur,NULL,Normal,NULL,Ruby,64,51,23,51,23,28,0,190,NULL,NULL
+294,Loudred,NULL,Normal,NULL,Ruby,84,71,43,71,43,48,0,120,421,Level 20
+295,Exploud,NULL,Normal,NULL,Ruby,104,91,63,91,73,68,0,45,422,Level 40
+296,Makuhita,NULL,Fighting,NULL,Ruby,72,60,30,20,30,25,0,180,NULL,NULL
+297,Hariyama,NULL,Fighting,NULL,Ruby,144,120,60,40,60,50,0,200,424,Level 24
+298,Azurill,NULL,Normal,Fairy,Ruby,50,20,40,20,40,20,0,150,NULL,NULL
+299,Nosepass,NULL,Rock,NULL,Ruby,30,45,135,45,90,30,0,255,NULL,NULL
+300,Skitty,NULL,Normal,NULL,Ruby,50,45,45,35,35,50,0,255,NULL,NULL
+301,Delcatty,NULL,Normal,NULL,Ruby,70,65,65,55,55,90,0,60,428,Moon Stone
+302,Sableye,NULL,Dark,Ghost,Ruby,50,75,75,65,65,50,0,45,NULL,NULL
+303,Mawile,NULL,Steel,Fairy,Ruby,50,85,85,55,55,50,0,45,NULL,NULL
+304,Aron,NULL,Steel,Rock,Ruby,50,70,100,40,40,30,0,180,NULL,NULL
+305,Lairon,NULL,Steel,Rock,Ruby,60,90,140,50,50,40,0,90,432,Level 32
+306,Aggron,NULL,Steel,Rock,Ruby,70,110,180,60,60,50,0,45,433,Level 42
+307,Meditite,NULL,Fighting,Psychic,Ruby,30,40,55,40,55,60,0,180,NULL,NULL
+308,Medicham,NULL,Fighting,Psychic,Ruby,60,60,75,60,75,80,0,90,435,Level 37
+309,Electrike,NULL,Electric,NULL,Ruby,40,45,40,65,40,65,0,120,NULL,NULL
+310,Manectric,NULL,Electric,NULL,Ruby,70,75,60,105,60,105,0,45,437,Level 26
+311,Plusle,NULL,Electric,NULL,Ruby,60,50,40,85,75,95,0,200,NULL,NULL
+312,Minun,NULL,Electric,NULL,Ruby,60,40,50,75,85,95,0,200,NULL,NULL
+313,Volbeat,NULL,Bug,NULL,Ruby,65,73,75,47,85,85,0,150,NULL,NULL
+314,Illumise,NULL,Bug,NULL,Ruby,65,47,75,73,85,85,0,150,NULL,NULL
+315,Roselia,NULL,Grass,Poison,Ruby,50,60,45,100,80,65,0,150,604,During The Day
+316,Gulpin,NULL,Poison,NULL,Ruby,70,43,53,43,53,40,0,225,NULL,NULL
+317,Swalot,NULL,Poison,NULL,Ruby,100,73,83,73,83,55,0,75,444,Level 26
+318,Carvanha,NULL,Water,Dark,Ruby,45,90,20,65,20,65,0,225,NULL,NULL
+319,Sharpedo,NULL,Water,Dark,Ruby,70,120,40,95,40,95,0,60,446,Level 30
+320,Wailmer,NULL,Water,NULL,Ruby,130,70,35,70,35,60,0,125,NULL,NULL
+321,Wailord,NULL,Water,NULL,Ruby,170,90,45,90,45,60,0,60,448,Level 40
+322,Numel,NULL,Fire,Ground,Ruby,60,60,40,65,45,35,0,255,NULL,NULL
+323,Camerupt,NULL,Fire,Ground,Ruby,70,100,70,105,75,40,0,150,450,Level 33
+324,Torkoal,NULL,Fire,NULL,Ruby,70,85,140,85,70,20,0,90,NULL,NULL
+325,Spoink,NULL,Psychic,NULL,Ruby,60,25,35,70,80,60,0,255,NULL,NULL
+326,Grumpig,NULL,Psychic,NULL,Ruby,80,45,65,90,110,80,0,60,453,Level 32
+327,Spinda,NULL,Normal,NULL,Ruby,60,60,60,60,60,60,0,255,NULL,NULL
+328,Trapinch,NULL,Ground,NULL,Ruby,45,100,45,45,45,10,0,255,NULL,NULL
+329,Vibrava,NULL,Ground,Dragon,Ruby,50,70,50,50,50,70,0,120,456,Level 35
+330,Flygon,NULL,Ground,Dragon,Ruby,80,100,80,80,80,100,0,45,457,Level 45
+331,Cacnea,NULL,Grass,NULL,Ruby,50,85,40,85,40,35,0,190,NULL,NULL
+332,Cacturne,NULL,Grass,Dark,Ruby,70,115,60,115,60,55,0,60,459,Level 32
+333,Swablu,NULL,Normal,Flying,Ruby,45,40,60,40,75,50,0,255,NULL,NULL
+334,Altaria,NULL,Dragon,Flying,Ruby,75,70,90,70,105,80,0,45,461,Level 35
+335,Zangoose,NULL,Normal,NULL,Ruby,73,115,60,60,60,90,0,90,NULL,NULL
+336,Seviper,NULL,Poison,NULL,Ruby,73,100,60,100,60,65,0,90,NULL,NULL
+337,Lunatone,NULL,Rock,Psychic,Ruby,90,55,65,95,85,70,0,45,NULL,NULL
+338,Solrock,NULL,Rock,Psychic,Ruby,90,95,85,55,65,70,0,45,NULL,NULL
+339,Barboach,NULL,Water,Ground,Ruby,50,48,43,46,41,60,0,190,NULL,NULL
+340,Whiscash,NULL,Water,Ground,Ruby,110,78,73,76,71,60,0,75,467,Level 30
+341,Corphish,NULL,Water,NULL,Ruby,43,80,65,50,35,35,0,205,NULL,NULL
+342,Crawdaunt,NULL,Water,Dark,Ruby,63,120,85,90,55,55,0,155,469,Level 30
+343,Baltoy,NULL,Ground,Psychic,Ruby,40,40,55,40,70,55,0,255,NULL,NULL
+344,Claydol,NULL,Ground,Psychic,Ruby,60,70,105,70,120,75,0,90,471,Level 36
+345,Lileep,NULL,Rock,Grass,Ruby,66,41,77,61,87,23,0,45,NULL,NULL
+346,Cradily,NULL,Rock,Grass,Ruby,86,81,97,81,107,43,0,45,473,Level 40
+347,Anorith,NULL,Rock,Bug,Ruby,45,95,50,40,50,75,0,45,NULL,NULL
+348,Armaldo,NULL,Rock,Bug,Ruby,75,125,100,70,80,45,0,45,475,Level 40
+349,Feebas,NULL,Water,NULL,Ruby,20,15,20,10,55,80,0,255,NULL,NULL
+350,Milotic,NULL,Water,NULL,Ruby,95,60,79,100,125,81,0,60,477,With Maxed Beauty
+351,Castform,NULL,Normal,NULL,Ruby,70,70,70,70,70,70,0,45,NULL,NULL
+352,Kecleon,NULL,Normal,NULL,Ruby,60,90,70,60,120,40,0,200,NULL,NULL
+353,Shuppet,NULL,Ghost,NULL,Ruby,44,75,35,63,33,45,0,225,NULL,NULL
+354,Banette,NULL,Ghost,NULL,Ruby,64,115,65,83,63,65,0,45,481,Level 37
+355,Duskull,NULL,Ghost,NULL,Ruby,20,40,90,30,90,25,0,190,NULL,NULL
+356,Dusclops,NULL,Ghost,NULL,Ruby,40,70,130,60,130,25,0,90,483,Level 37
+357,Tropius,NULL,Grass,Flying,Ruby,99,68,83,72,87,51,0,200,NULL,NULL
+358,Chimecho,NULL,Psychic,NULL,Ruby,75,50,80,95,90,65,0,45,631,During The Night
+359,Absol,NULL,Dark,NULL,Ruby,65,130,60,75,60,75,0,30,NULL,NULL
+360,Wynaut,NULL,Psychic,NULL,Ruby,95,23,48,23,48,23,0,125,NULL,NULL
+361,Snorunt,NULL,Ice,NULL,Ruby,50,50,50,50,50,50,0,190,NULL,NULL
+362,Glalie,NULL,Ice,NULL,Ruby,80,80,80,80,80,80,0,75,489,Level 42
+363,Spheal,NULL,Ice,Water,Ruby,70,40,50,55,50,25,0,255,NULL,NULL
+364,Sealeo,NULL,Ice,Water,Ruby,90,60,70,75,70,45,0,120,491,Level 32
+365,Walrein,NULL,Ice,Water,Ruby,110,80,90,95,90,65,0,45,492,Level 44
+366,Clamperl,NULL,Water,NULL,Ruby,35,64,85,74,55,32,0,255,NULL,NULL
+367,Huntail,NULL,Water,NULL,Ruby,55,104,105,94,75,52,0,60,494,Deep Sea Tooth
+368,Gorebyss,NULL,Water,NULL,Ruby,55,84,105,114,75,52,0,60,494,Deep Sea Scale
+369,Relicanth,NULL,Water,Rock,Ruby,100,90,130,45,65,55,0,25,NULL,NULL
+370,Luvdisc,NULL,Water,NULL,Ruby,43,30,55,40,65,97,0,225,NULL,NULL
+371,Bagon,NULL,Dragon,NULL,Ruby,45,75,60,40,30,50,0,45,NULL,NULL
+372,Shelgon,NULL,Dragon,NULL,Ruby,65,95,100,60,50,50,0,45,499,Level 30
+373,Salamence,NULL,Dragon,Flying,Ruby,95,135,80,110,80,100,0,45,500,Level 50
+374,Beldum,NULL,Steel,Psychic,Ruby,40,55,80,35,60,30,0,3,NULL,NULL
+375,Metang,NULL,Steel,Psychic,Ruby,60,75,100,55,80,50,0,3,502,Level 20
+376,Metagross,NULL,Steel,Psychic,Ruby,80,135,130,95,90,70,0,3,503,Level 45
+377,Regirock,Sub-Legendary,Rock,NULL,Ruby,80,100,200,50,100,50,0,3,NULL,NULL
+378,Regice,Sub-Legendary,Ice,NULL,Ruby,80,50,100,100,200,50,0,3,NULL,NULL
+379,Registeel,Sub-Legendary,Steel,NULL,Ruby,80,75,150,75,150,50,0,3,NULL,NULL
+380,Latias,Sub-Legendary,Dragon,Psychic,Ruby,80,80,90,110,130,110,0,3,NULL,NULL
+381,Latios,Sub-Legendary,Dragon,Psychic,Ruby,80,90,80,130,110,110,0,3,NULL,NULL
+382,Kyogre,Legendary,Water,NULL,Ruby,100,100,90,150,140,90,0,3,NULL,NULL
+383,Groudon,Legendary,Ground,NULL,Ruby,100,150,140,100,90,90,0,3,NULL,NULL
+384,Rayquaza,Legendary,Dragon,Flying,Ruby,105,150,90,150,90,95,0,45,NULL,NULL
+385,Jirachi,Mythical,Steel,Psychic,Ruby,100,100,100,100,100,100,0,3,NULL,NULL
+386,Deoxys,Mythical,Psychic,NULL,Ruby,50,150,50,150,50,150,0,3,NULL,NULL
+387,Turtwig,NULL,Grass,NULL,Diamond,55,68,64,45,55,31,0,45,NULL,NULL
+388,Grotle,NULL,Grass,NULL,Diamond,75,89,85,55,65,36,0,45,591,Level 18
+389,Torterra,NULL,Grass,Ground,Diamond,95,109,105,75,85,56,0,45,592,Level 32
+390,Chimchar,NULL,Fire,NULL,Diamond,44,58,44,58,44,61,0,45,NULL,NULL
+391,Monferno,NULL,Fire,Fighting,Diamond,64,78,52,78,52,81,0,45,34,Level 14
+392,Infernape,NULL,Fire,Fighting,Diamond,76,104,71,104,71,108,0,45,35,Level 36
+393,Piplup,NULL,Water,NULL,Diamond,53,51,53,61,56,40,0,45,NULL,NULL
+394,Prinplup,NULL,Water,NULL,Diamond,64,66,68,81,76,50,0,45,594,Level 16
+395,Empoleon,NULL,Water,Steel,Diamond,84,86,88,111,101,60,0,45,595,Level 36
+396,Starly,NULL,Normal,Flying,Diamond,40,55,30,30,30,60,0,255,NULL,NULL
+397,Staravia,NULL,Normal,Flying,Diamond,55,75,50,40,40,80,0,120,597,Level 14
+398,Staraptor,NULL,Normal,Flying,Diamond,85,120,70,50,60,100,0,45,598,Level 34
+399,Bidoof,NULL,Normal,NULL,Diamond,59,45,40,35,40,31,0,255,NULL,NULL
+400,Bibarel,NULL,Normal,Water,Diamond,79,85,60,55,60,71,0,127,600,Level 15
+401,Kricketot,NULL,Bug,NULL,Diamond,37,25,41,25,41,25,0,255,NULL,NULL
+402,Kricketune,NULL,Bug,NULL,Diamond,77,85,51,55,51,65,0,45,602,Level 10
+403,Shinx,NULL,Electric,NULL,Diamond,45,65,34,40,34,45,0,235,NULL,NULL
+404,Luxio,NULL,Electric,NULL,Diamond,60,85,49,60,49,60,0,120,20,Level 15
+405,Luxray,NULL,Electric,NULL,Diamond,80,120,79,95,79,70,0,45,21,Level 30
+406,Budew,NULL,Grass,Poison,Diamond,40,30,35,50,70,55,0,255,NULL,NULL
+407,Roserade,NULL,Grass,Poison,Diamond,60,70,65,125,105,90,0,75,443,Shiny Stone
+408,Cranidos,NULL,Rock,NULL,Diamond,67,125,40,30,30,58,0,45,NULL,NULL
+409,Rampardos,NULL,Rock,NULL,Diamond,97,165,60,65,50,58,0,45,606,Level 30
+410,Shieldon,NULL,Rock,Steel,Diamond,30,42,118,42,88,30,0,45,NULL,NULL
+411,Bastiodon,NULL,Rock,Steel,Diamond,60,52,168,47,138,30,0,45,608,Level 30
+412,Burmy,NULL,Bug,NULL,Diamond,40,29,45,29,45,36,0,120,NULL,NULL
+413,Wormadam,NULL,Bug,Grass,Diamond,60,59,85,79,105,36,0,45,610,Level 20 When Female
+414,Mothim,NULL,Bug,Flying,Diamond,70,94,50,94,50,66,0,45,610,Level 20 When Male
+415,Combee,NULL,Bug,Flying,Diamond,30,30,42,30,42,70,0,120,NULL,NULL
+416,Vespiquen,NULL,Bug,Flying,Diamond,70,80,102,80,102,40,0,45,613,Level 21 When Female
+417,Pachirisu,NULL,Electric,NULL,Diamond,60,45,70,45,90,95,0,200,NULL,NULL
+418,Buizel,NULL,Water,NULL,Diamond,55,65,35,60,30,85,0,190,NULL,NULL
+419,Floatzel,NULL,Water,NULL,Diamond,85,105,55,85,50,115,0,75,616,Level 26
+420,Cherubi,NULL,Grass,NULL,Diamond,45,35,45,62,53,35,0,190,NULL,NULL
+421,Cherrim,NULL,Grass,NULL,Diamond,70,60,70,87,78,85,0,75,618,Level 25
+422,Shellos,NULL,Water,NULL,Diamond,76,48,48,57,62,34,0,190,NULL,NULL
+423,Gastrodon,NULL,Water,Ground,Diamond,111,83,68,92,82,39,0,75,620,Level 30
+424,Ambipom,NULL,Normal,NULL,Diamond,75,100,66,60,66,115,0,45,290,Knowing Double Hit
+425,Drifloon,NULL,Ghost,Flying,Diamond,90,50,34,60,44,70,0,125,NULL,NULL
+426,Drifblim,NULL,Ghost,Flying,Diamond,150,80,44,90,54,80,0,60,623,Level 28
+427,Buneary,NULL,Normal,NULL,Diamond,55,66,44,44,56,85,0,190,NULL,NULL
+428,Lopunny,NULL,Normal,NULL,Diamond,65,76,84,54,96,105,0,60,625,NULL
+429,Mismagius,NULL,Ghost,NULL,Diamond,60,60,60,105,105,105,0,45,324,Dusk Stone
+430,Honchkrow,NULL,Dark,Flying,Diamond,100,125,52,105,52,71,0,30,298,Dusk Stone
+431,Glameow,NULL,Normal,NULL,Diamond,49,55,42,42,37,85,0,190,NULL,NULL
+432,Purugly,NULL,Normal,NULL,Diamond,71,82,64,64,59,112,0,75,629,Level 38
+433,Chingling,NULL,Psychic,NULL,Diamond,45,30,50,65,50,45,0,120,NULL,NULL
+434,Stunky,NULL,Poison,Dark,Diamond,63,63,47,41,41,74,0,225,NULL,NULL
+435,Skuntank,NULL,Poison,Dark,Diamond,103,93,67,71,61,84,0,60,632,Level 34
+436,Bronzor,NULL,Steel,Psychic,Diamond,57,24,86,24,86,23,0,255,NULL,NULL
+437,Bronzong,NULL,Steel,Psychic,Diamond,67,89,116,79,116,33,0,90,634,Level 33
+438,Bonsly,NULL,Rock,NULL,Diamond,50,80,95,10,45,10,0,255,NULL,NULL
+439,Mime Jr.,NULL,Psychic,Fairy,Diamond,20,25,45,70,90,60,0,145,NULL,NULL
+440,Happiny,NULL,Normal,NULL,Diamond,100,5,5,15,65,30,0,130,NULL,NULL
+441,Chatot,NULL,Normal,Flying,Diamond,76,65,45,92,42,91,0,30,NULL,NULL
+442,Spiritomb,NULL,Ghost,Dark,Diamond,50,92,108,92,108,35,0,100,NULL,NULL
+443,Gible,NULL,Dragon,Ground,Diamond,58,70,45,40,45,42,0,45,NULL,NULL
+444,Gabite,NULL,Dragon,Ground,Diamond,68,90,65,50,55,82,0,45,641,Level 24
+445,Garchomp,NULL,Dragon,Ground,Diamond,108,130,95,80,85,102,0,45,642,Level 48
+446,Munchlax,NULL,Normal,NULL,Diamond,135,85,40,40,85,5,0,50,NULL,NULL
+447,Riolu,NULL,Fighting,NULL,Diamond,40,70,40,35,40,60,0,75,NULL,NULL
+448,Lucario,NULL,Fighting,Steel,Diamond,70,110,70,115,70,90,0,45,645,During The Day
+449,Hippopotas,NULL,Ground,NULL,Diamond,68,72,78,38,42,32,0,140,NULL,NULL
+450,Hippowdon,NULL,Ground,NULL,Diamond,108,112,118,68,72,47,0,60,647,Level 34
+451,Skorupi,NULL,Poison,Bug,Diamond,40,50,90,30,55,65,0,120,NULL,NULL
+452,Drapion,NULL,Poison,Dark,Diamond,70,90,110,60,75,95,0,45,649,Level 40
+453,Croagunk,NULL,Poison,Fighting,Diamond,48,61,40,61,40,50,0,140,NULL,NULL
+454,Toxicroak,NULL,Poison,Fighting,Diamond,83,106,65,86,65,85,0,75,651,Level 37
+455,Carnivine,NULL,Grass,NULL,Diamond,74,100,72,90,72,46,0,200,NULL,NULL
+456,Finneon,NULL,Water,NULL,Diamond,49,49,56,49,61,66,0,190,NULL,NULL
+457,Lumineon,NULL,Water,NULL,Diamond,69,69,76,69,86,91,0,75,654,Level 31
+458,Mantyke,NULL,Water,Flying,Diamond,45,20,50,60,120,50,0,25,NULL,NULL
+459,Snover,NULL,Grass,Ice,Diamond,60,62,50,62,60,40,0,120,NULL,NULL
+460,Abomasnow,NULL,Grass,Ice,Diamond,90,92,75,92,85,60,0,60,657,Level 40
+461,Weavile,NULL,Dark,Ice,Diamond,70,120,65,45,85,125,0,45,339,Holding Razor Claw At Night
+462,Magnezone,NULL,Electric,Steel,Diamond,70,70,115,130,90,60,0,30,1341,In a Special Magnetic Field
+463,Lickilicky,NULL,Normal,NULL,Diamond,110,85,95,80,95,50,0,30,142,Knowing Rollout
+464,Rhyperior,NULL,Ground,Rock,Diamond,115,140,130,55,55,40,0,30,146,Protector
+465,Tangrowth,NULL,Grass,NULL,Diamond,100,100,125,110,50,50,0,30,148,Knowing Ancient Power
+466,Electivire,NULL,Electric,NULL,Diamond,75,123,67,95,85,95,0,30,221,Electirizer
+467,Magmortar,NULL,Fire,NULL,Diamond,75,95,67,125,95,83,0,30,222,Magmarizer
+468,Togekiss,NULL,Fairy,Flying,Diamond,85,50,95,120,115,80,0,30,265,Shiny Stone
+469,Yanmega,NULL,Bug,Flying,Diamond,86,76,86,116,56,95,0,30,293,Knowing Ancient Power
+470,Leafeon,NULL,Grass,NULL,Diamond,65,110,130,60,65,95,0,45,228,Next to Moss Rock
+471,Glaceon,NULL,Ice,NULL,Diamond,65,60,110,130,95,65,0,45,228,Next to Icy Rock
+472,Gliscor,NULL,Ground,Flying,Diamond,75,95,125,45,75,95,0,30,331,Holding Razor Fang At Night
+473,Mamoswine,NULL,Ice,Ground,Diamond,110,130,80,70,60,80,0,50,345,Knowing Ancient Power
+474,Porygon-Z,NULL,Normal,NULL,Diamond,85,80,70,135,75,90,0,30,357,Dubious Disc
+475,Gallade,NULL,Psychic,Fighting,Diamond,68,125,65,65,115,80,0,45,409,Dawn Stone When Male
+476,Probopass,NULL,Rock,Steel,Diamond,60,55,145,75,150,40,0,60,427,Near A Special Magnetic Field
+477,Dusknoir,NULL,Ghost,NULL,Diamond,45,100,135,65,135,45,0,45,484,Reaper Cloth
+478,Froslass,NULL,Ice,Ghost,Diamond,70,80,70,80,70,110,0,75,489,Dawn Stone When Female
+479,Rotom,NULL,Electric,Ghost,Diamond,50,50,77,95,77,91,0,45,NULL,NULL
+480,Uxie,Sub-Legendary,Psychic,NULL,Diamond,75,75,130,75,130,95,0,3,NULL,NULL
+481,Mesprit,Sub-Legendary,Psychic,NULL,Diamond,80,105,105,105,105,80,0,3,NULL,NULL
+482,Azelf,Sub-Legendary,Psychic,NULL,Diamond,75,125,70,125,70,115,0,3,NULL,NULL
+483,Dialga,Legendary,Steel,Dragon,Diamond,100,120,120,150,100,90,0,3,NULL,NULL
+484,Palkia,Legendary,Water,Dragon,Diamond,90,120,100,150,120,100,0,3,NULL,NULL
+485,Heatran,Sub-Legendary,Fire,Steel,Diamond,91,90,106,130,106,77,0,3,NULL,NULL
+486,Regigigas,Sub-Legendary,Normal,NULL,Diamond,110,160,110,80,110,100,0,3,NULL,NULL
+487,Giratina,Legendary,Ghost,Dragon,Diamond,150,100,120,100,120,90,0,3,NULL,NULL
+488,Cresselia,Sub-Legendary,Psychic,NULL,Diamond,120,70,110,75,120,85,0,3,NULL,NULL
+489,Phione,Mythical,Water,NULL,Diamond,80,80,80,80,80,80,0,30,NULL,NULL
+490,Manaphy,Mythical,Water,NULL,Diamond,100,100,100,100,100,100,0,3,NULL,NULL
+491,Darkrai,Mythical,Dark,NULL,Diamond,70,90,90,135,90,125,0,3,NULL,NULL
+492,Shaymin,Mythical,Grass,NULL,Diamond,100,100,100,100,100,100,0,45,NULL,NULL
+493,Arceus,Mythical,Normal,NULL,Diamond,120,120,120,120,120,120,0,3,NULL,NULL
+494,Victini,Mythical,Psychic,Fire,Black,100,100,100,100,100,100,0,3,NULL,NULL
+495,Snivy,NULL,Grass,NULL,Black,45,45,55,45,55,63,0,45,NULL,NULL
+496,Servine,NULL,Grass,NULL,Black,60,60,75,60,75,83,0,45,829,Level 17
+497,Serperior,NULL,Grass,NULL,Black,75,75,95,75,95,113,0,45,830,Level 36
+498,Tepig,NULL,Fire,NULL,Black,65,63,45,45,45,45,0,45,NULL,NULL
+499,Pignite,NULL,Fire,Fighting,Black,90,93,55,70,55,55,0,45,832,Level 17
+500,Emboar,NULL,Fire,Fighting,Black,110,123,65,100,65,65,0,45,833,Level 36
+501,Oshawott,NULL,Water,NULL,Black,55,55,45,63,45,45,0,45,NULL,NULL
+502,Dewott,NULL,Water,NULL,Black,75,75,60,83,60,60,0,45,835,Level 17
+503,Samurott,NULL,Water,NULL,Black,95,100,85,108,70,70,0,45,836,Level 36
+504,Patrat,NULL,Normal,NULL,Black,45,55,39,35,39,42,0,255,NULL,NULL
+505,Watchog,NULL,Normal,NULL,Black,60,85,69,60,69,77,0,255,838,Level 20
+506,Lillipup,NULL,Normal,NULL,Black,45,60,45,25,45,55,0,255,NULL,NULL
+507,Herdier,NULL,Normal,NULL,Black,65,80,65,35,65,60,0,120,840,Level 16
+508,Stoutland,NULL,Normal,NULL,Black,85,110,90,45,90,80,0,45,841,Level 32
+509,Purrloin,NULL,Dark,NULL,Black,41,50,37,50,37,66,0,255,NULL,NULL
+510,Liepard,NULL,Dark,NULL,Black,64,88,50,88,50,106,0,90,843,Level 20
+511,Pansage,NULL,Grass,NULL,Black,50,53,48,53,48,64,0,190,NULL,NULL
+512,Simisage,NULL,Grass,NULL,Black,75,98,63,98,63,101,0,75,845,Leaf Stone
+513,Pansear,NULL,Fire,NULL,Black,50,53,48,53,48,64,0,190,NULL,NULL
+514,Simisear,NULL,Fire,NULL,Black,75,98,63,98,63,101,0,75,847,Fire Stone
+515,Panpour,NULL,Water,NULL,Black,50,53,48,53,48,64,0,190,NULL,NULL
+516,Simipour,NULL,Water,NULL,Black,75,98,63,98,63,101,0,75,849,Water Stone
+517,Munna,NULL,Psychic,NULL,Black,76,25,45,67,55,24,0,190,NULL,NULL
+518,Musharna,NULL,Psychic,NULL,Black,116,55,85,107,95,29,0,75,851,Moon Stone
+519,Pidove,NULL,Normal,Flying,Black,50,55,50,36,30,43,0,255,NULL,NULL
+520,Tranquill,NULL,Normal,Flying,Black,62,77,62,50,42,65,0,120,853,Level 21
+521,Unfezant,NULL,Normal,Flying,Black,80,115,80,65,55,93,0,45,854,Level 32
+522,Blitzle,NULL,Electric,NULL,Black,45,60,32,50,32,76,0,190,NULL,NULL
+523,Zebstrika,NULL,Electric,NULL,Black,75,100,63,80,63,116,0,75,856,Level 27
+524,Roggenrola,NULL,Rock,NULL,Black,55,75,85,25,25,15,0,255,NULL,NULL
+525,Boldore,NULL,Rock,NULL,Black,70,105,105,50,40,20,0,120,858,Level 25
+526,Gigalith,NULL,Rock,NULL,Black,85,135,130,60,80,25,0,45,859,NULL
+527,Woobat,NULL,Psychic,Flying,Black,65,45,43,55,43,72,0,190,NULL,NULL
+528,Swoobat,NULL,Psychic,Flying,Black,67,57,55,77,55,114,0,45,861,NULL
+529,Drilbur,NULL,Ground,NULL,Black,60,85,40,30,45,68,0,120,NULL,NULL
+530,Excadrill,NULL,Ground,Steel,Black,110,135,60,50,65,88,0,60,863,Level 31
+531,Audino,NULL,Normal,NULL,Black,103,60,86,60,86,50,0,255,NULL,NULL
+532,Timburr,NULL,Fighting,NULL,Black,75,80,55,25,35,35,0,180,NULL,NULL
+533,Gurdurr,NULL,Fighting,NULL,Black,85,105,85,40,50,40,0,90,866,Level 25
+534,Conkeldurr,NULL,Fighting,NULL,Black,105,140,95,55,65,45,0,45,867,NULL
+535,Tympole,NULL,Water,NULL,Black,50,50,40,50,40,64,0,255,NULL,NULL
+536,Palpitoad,NULL,Water,Ground,Black,75,65,55,65,55,69,0,120,869,Level 25
+537,Seismitoad,NULL,Water,Ground,Black,105,95,75,85,75,74,0,45,870,Level 36
+538,Throh,NULL,Fighting,NULL,Black,120,100,85,30,85,45,0,45,NULL,NULL
+539,Sawk,NULL,Fighting,NULL,Black,75,125,75,30,75,85,0,45,NULL,NULL
+540,Sewaddle,NULL,Bug,Grass,Black,45,53,70,40,60,42,0,255,NULL,NULL
+541,Swadloon,NULL,Bug,Grass,Black,55,63,90,50,80,42,0,120,874,Level 20
+542,Leavanny,NULL,Bug,Grass,Black,75,103,80,70,80,92,0,45,875,NULL
+543,Venipede,NULL,Bug,Poison,Black,30,45,59,30,39,57,0,255,NULL,NULL
+544,Whirlipede,NULL,Bug,Poison,Black,40,55,99,40,79,47,0,120,877,Level 22
+545,Scolipede,NULL,Bug,Poison,Black,60,100,89,55,69,112,0,45,878,Level 30
+546,Cottonee,NULL,Grass,Fairy,Black,40,27,60,37,50,66,0,190,NULL,NULL
+547,Whimsicott,NULL,Grass,Fairy,Black,60,67,85,77,75,116,0,75,880,Sun Stone
+548,Petilil,NULL,Grass,NULL,Black,45,35,50,70,50,30,0,190,NULL,NULL
+549,Lilligant,NULL,Grass,NULL,Black,70,60,75,110,75,90,0,75,882,Sun Stone
+550,Basculin,NULL,Water,NULL,Black,70,92,65,80,55,98,0,25,NULL,NULL
+551,Sandile,NULL,Ground,Dark,Black,50,72,35,35,35,65,0,180,NULL,NULL
+552,Krokorok,NULL,Ground,Dark,Black,60,82,45,45,45,74,0,90,886,Level 29
+553,Krookodile,NULL,Ground,Dark,Black,95,117,80,65,70,92,0,45,887,Level 40
+554,Darumaka,NULL,Fire,NULL,Black,70,90,45,15,45,50,0,120,NULL,NULL
+555,Darmanitan,NULL,Fire,NULL,Black,105,140,55,30,55,95,0,60,889,Level 35
+556,Maractus,NULL,Grass,NULL,Black,75,86,67,106,67,60,0,255,NULL,NULL
+557,Dwebble,NULL,Bug,Rock,Black,50,65,85,35,35,55,0,190,NULL,NULL
+558,Crustle,NULL,Bug,Rock,Black,70,105,125,65,75,45,0,75,892,Level 34
+559,Scraggy,NULL,Dark,Fighting,Black,50,75,70,35,70,48,0,180,NULL,NULL
+560,Scrafty,NULL,Dark,Fighting,Black,65,90,115,45,115,58,0,90,894,Level 39
+561,Sigilyph,NULL,Psychic,Flying,Black,72,58,80,103,80,97,0,45,NULL,NULL
+562,Yamask,NULL,Ghost,NULL,Black,38,30,85,55,65,30,0,190,NULL,NULL
+563,Cofagrigus,NULL,Ghost,NULL,Black,58,50,145,95,105,30,0,90,916,Level 34
+564,Tirtouga,NULL,Water,Rock,Black,54,78,103,53,45,22,0,45,NULL,NULL
+565,Carracosta,NULL,Water,Rock,Black,74,108,133,83,65,32,0,45,918,Level 37
+566,Archen,NULL,Rock,Flying,Black,55,112,45,74,45,70,0,45,NULL,NULL
+567,Archeops,NULL,Rock,Flying,Black,75,140,65,112,65,110,0,45,920,Level 37
+568,Trubbish,NULL,Poison,NULL,Black,50,50,62,40,62,65,0,190,NULL,NULL
+569,Garbodor,NULL,Poison,NULL,Black,80,95,82,60,82,75,0,60,922,Level 36
+570,Zorua,NULL,Dark,NULL,Black,40,65,40,80,40,65,0,75,NULL,NULL
+571,Zoroark,NULL,Dark,NULL,Black,60,105,60,120,60,105,0,45,939,Level 30
+572,Minccino,NULL,Normal,NULL,Black,55,50,40,40,40,75,0,255,NULL,NULL
+573,Cinccino,NULL,Normal,NULL,Black,75,95,60,65,60,115,0,60,941,Shiny Stone
+574,Gothita,NULL,Psychic,NULL,Black,45,30,50,55,65,45,0,200,NULL,NULL
+575,Gothorita,NULL,Psychic,NULL,Black,60,45,70,75,85,55,0,100,943,Level 32
+576,Gothitelle,NULL,Psychic,NULL,Black,70,55,95,95,110,65,0,50,944,Level 41
+577,Solosis,NULL,Psychic,NULL,Black,45,30,40,105,50,20,0,200,NULL,NULL
+578,Duosion,NULL,Psychic,NULL,Black,65,40,50,125,60,30,0,100,946,Level 32
+579,Reuniclus,NULL,Psychic,NULL,Black,110,65,75,125,85,30,0,50,947,Level 41
+580,Ducklett,NULL,Water,Flying,Black,62,44,50,44,50,55,0,190,NULL,NULL
+581,Swanna,NULL,Water,Flying,Black,75,87,63,87,63,98,0,45,950,Level 35
+582,Vanillite,NULL,Ice,NULL,Black,36,50,50,65,60,44,0,255,NULL,NULL
+583,Vanillish,NULL,Ice,NULL,Black,51,65,65,80,75,59,0,120,952,Level 35
+584,Vanilluxe,NULL,Ice,NULL,Black,71,95,85,110,95,79,0,45,953,Level 47
+585,Deerling,NULL,Normal,Grass,Black,60,60,50,40,50,75,0,190,NULL,NULL
+586,Sawsbuck,NULL,Normal,Grass,Black,80,100,70,60,70,95,0,75,955,Level 34
+587,Emolga,NULL,Electric,Flying,Black,55,75,60,75,60,103,0,200,NULL,NULL
+588,Karrablast,NULL,Bug,NULL,Black,50,75,45,40,45,60,0,200,NULL,NULL
+589,Escavalier,NULL,Bug,Steel,Black,70,135,105,60,105,20,0,75,958,With Shelmet
+590,Foongus,NULL,Grass,Poison,Black,69,55,45,55,55,15,0,190,NULL,NULL
+591,Amoonguss,NULL,Grass,Poison,Black,114,85,70,85,80,30,0,75,961,Level 39
+592,Frillish,NULL,Water,Ghost,Black,55,40,50,65,85,40,0,190,NULL,NULL
+593,Jellicent,NULL,Water,Ghost,Black,100,60,70,85,105,60,0,60,963,Level 40
+594,Alomomola,NULL,Water,NULL,Black,165,75,80,40,45,65,0,75,NULL,NULL
+595,Joltik,NULL,Bug,Electric,Black,50,47,50,57,50,65,0,190,NULL,NULL
+596,Galvantula,NULL,Bug,Electric,Black,70,77,60,97,60,108,0,75,966,Level 36
+597,Ferroseed,NULL,Grass,Steel,Black,44,50,91,24,86,10,0,255,NULL,NULL
+598,Ferrothorn,NULL,Grass,Steel,Black,74,94,131,54,116,20,0,90,968,Level 40
+599,Klink,NULL,Steel,NULL,Black,40,55,70,45,60,30,0,130,NULL,NULL
+600,Klang,NULL,Steel,NULL,Black,60,80,95,70,85,50,0,60,970,Level 38
+601,Klinklang,NULL,Steel,NULL,Black,60,100,115,70,85,90,0,30,972,Level 49
+602,Tynamo,NULL,Electric,NULL,Black,35,55,40,45,40,60,0,190,NULL,NULL
+603,Eelektrik,NULL,Electric,NULL,Black,65,85,70,75,70,40,0,60,974,Level 39
+604,Eelektross,NULL,Electric,NULL,Black,85,115,80,105,80,50,0,30,975,Thunder Stone
+605,Elgyem,NULL,Psychic,NULL,Black,55,55,55,85,55,30,0,255,NULL,NULL
+606,Beheeyem,NULL,Psychic,NULL,Black,75,75,75,125,95,40,0,90,977,Level 42
+607,Litwick,NULL,Ghost,Fire,Black,50,30,55,65,55,20,0,190,NULL,NULL
+608,Lampent,NULL,Ghost,Fire,Black,60,40,60,95,60,55,0,90,979,Level 41
+609,Chandelure,NULL,Ghost,Fire,Black,60,55,90,145,90,80,0,45,980,Dusk Stone
+610,Axew,NULL,Dragon,NULL,Black,46,87,60,30,40,57,0,75,NULL,NULL
+611,Fraxure,NULL,Dragon,NULL,Black,66,117,70,40,50,67,0,60,983,Level 38
+612,Haxorus,NULL,Dragon,NULL,Black,76,147,90,60,70,97,0,45,984,Level 48
+613,Cubchoo,NULL,Ice,NULL,Black,55,70,40,60,40,40,0,120,NULL,NULL
+614,Beartic,NULL,Ice,NULL,Black,95,130,80,70,80,50,0,60,986,Level 37
+615,Cryogonal,NULL,Ice,NULL,Black,80,50,50,95,135,105,0,25,NULL,NULL
+616,Shelmet,NULL,Bug,NULL,Black,50,40,85,40,65,25,0,200,NULL,NULL
+617,Accelgor,NULL,Bug,NULL,Black,80,70,40,100,60,145,0,75,989,With Karrablast
+618,Stunfisk,NULL,Ground,Electric,Black,109,66,84,81,99,32,0,75,NULL,NULL
+619,Mienfoo,NULL,Fighting,NULL,Black,45,85,50,55,50,65,0,180,NULL,NULL
+620,Mienshao,NULL,Fighting,NULL,Black,65,125,60,95,60,105,0,45,992,Level 50
+621,Druddigon,NULL,Dragon,NULL,Black,77,120,90,60,90,48,0,45,NULL,NULL
+622,Golett,NULL,Ground,Ghost,Black,59,74,50,35,50,35,0,190,NULL,NULL
+623,Golurk,NULL,Ground,Ghost,Black,89,124,80,55,80,55,0,90,996,Level 43
+624,Pawniard,NULL,Dark,Steel,Black,45,85,70,40,40,60,0,120,NULL,NULL
+625,Bisharp,NULL,Dark,Steel,Black,65,125,100,60,70,70,0,45,998,Level 52
+626,Bouffalant,NULL,Normal,NULL,Black,95,110,95,40,95,55,0,45,NULL,NULL
+627,Rufflet,NULL,Normal,Flying,Black,70,83,50,37,50,60,0,190,NULL,NULL
+628,Braviary,NULL,Normal,Flying,Black,100,123,75,57,75,80,0,60,1001,Level 54
+629,Vullaby,NULL,Dark,Flying,Black,70,55,75,45,65,60,0,190,NULL,NULL
+630,Mandibuzz,NULL,Dark,Flying,Black,110,65,105,55,95,80,0,60,1003,Level 54
+631,Heatmor,NULL,Fire,NULL,Black,85,97,66,105,66,65,0,90,NULL,NULL
+632,Durant,NULL,Bug,Steel,Black,58,109,112,48,48,109,0,90,NULL,NULL
+633,Deino,NULL,Dark,Dragon,Black,52,65,50,45,50,38,0,45,NULL,NULL
+634,Zweilous,NULL,Dark,Dragon,Black,72,85,70,65,70,58,0,45,1008,Level 50
+635,Hydreigon,NULL,Dark,Dragon,Black,92,105,90,125,90,98,0,45,1009,Level 64
+636,Larvesta,NULL,Bug,Fire,Black,55,85,55,50,55,60,0,45,NULL,NULL
+637,Volcarona,NULL,Bug,Fire,Black,85,60,65,135,105,100,0,15,1011,Level 59
+638,Cobalion,Sub-Legendary,Steel,Fighting,Black,91,90,129,90,72,108,0,3,NULL,NULL
+639,Terrakion,Sub-Legendary,Rock,Fighting,Black,91,129,90,72,90,108,0,3,NULL,NULL
+640,Virizion,Sub-Legendary,Grass,Fighting,Black,91,90,72,90,129,108,0,3,NULL,NULL
+641,Tornadus,Sub-Legendary,Flying,NULL,Black,79,115,70,125,80,111,0,3,NULL,NULL
+642,Thundurus,Sub-Legendary,Electric,Flying,Black,79,115,70,125,80,111,0,3,NULL,NULL
+643,Reshiram,Legendary,Dragon,Fire,Black,100,120,100,150,120,90,0,3,NULL,NULL
+644,Zekrom,Legendary,Dragon,Electric,Black,100,150,120,120,100,90,0,3,NULL,NULL
+645,Landorus,Sub-Legendary,Ground,Flying,Black,89,125,90,115,80,101,0,3,NULL,NULL
+646,Kyurem,Legendary,Dragon,Ice,Black,125,130,90,130,90,95,0,3,NULL,NULL
+647,Keldeo,Mythical,Water,Fighting,Black,91,72,90,129,90,108,0,3,NULL,NULL
+648,Meloetta,Mythical,Normal,Psychic,Black,100,77,77,128,128,90,0,3,NULL,NULL
+649,Genesect,Mythical,Bug,Steel,Black,71,120,95,120,95,99,0,3,NULL,NULL
+650,Chespin,NULL,Grass,NULL,X,56,61,65,48,45,38,0,45,NULL,NULL
+651,Quilladin,NULL,Grass,NULL,X,61,78,95,56,58,57,0,45,1066,Level 16
+652,Chesnaught,NULL,Grass,Fighting,X,88,107,122,74,75,64,0,45,1067,Level 36
+653,Fennekin,NULL,Fire,NULL,X,40,45,40,62,60,60,0,45,NULL,NULL
+654,Braixen,NULL,Fire,NULL,X,59,59,58,90,70,73,0,45,1069,Level 16
+655,Delphox,NULL,Fire,Psychic,X,75,69,72,114,100,104,0,45,1070,Level 36
+656,Froakie,NULL,Water,NULL,X,41,56,40,62,44,71,0,45,NULL,NULL
+657,Frogadier,NULL,Water,NULL,X,54,63,52,83,56,97,0,45,1072,Level 16
+658,Greninja,NULL,Water,Dark,X,72,95,67,103,71,122,0,45,1073,Level 36
+659,Bunnelby,NULL,Normal,NULL,X,38,36,38,32,36,57,0,255,NULL,NULL
+660,Diggersby,NULL,Normal,Ground,X,85,56,77,50,77,78,0,127,1075,Level 20
+661,Fletchling,NULL,Normal,Flying,X,45,50,43,40,38,62,0,255,NULL,NULL
+662,Fletchinder,NULL,Fire,Flying,X,62,73,55,56,52,84,0,120,1078,Level 17
+663,Talonflame,NULL,Fire,Flying,X,78,81,71,74,69,126,0,45,1079,Level 35
+664,Scatterbug,NULL,Bug,NULL,X,38,35,40,27,25,35,0,255,NULL,NULL
+665,Spewpa,NULL,Bug,NULL,X,45,22,60,27,30,29,0,120,1081,Level 9
+666,Vivillon,NULL,Bug,Flying,X,80,52,50,90,50,89,0,45,1082,Level 12
+667,Litleo,NULL,Fire,Normal,X,62,50,58,73,54,72,0,220,NULL,NULL
+668,Pyroar,NULL,Fire,Normal,X,86,68,72,109,66,106,0,65,1084,Level 35
+669,Flabébé,NULL,Fairy,NULL,X,44,38,39,61,79,42,0,225,NULL,NULL
+670,Floette,NULL,Fairy,NULL,X,54,45,47,75,98,52,0,120,1086,Level 19
+671,Florges,NULL,Fairy,NULL,X,78,65,68,112,154,75,0,45,1088,Shiny Stone
+672,Skiddo,NULL,Grass,NULL,X,66,65,48,62,57,52,0,200,NULL,NULL
+673,Gogoat,NULL,Grass,NULL,X,123,100,62,97,81,68,0,45,1090,Level 32
+674,Pancham,NULL,Fighting,NULL,X,67,82,62,46,48,43,0,220,NULL,NULL
+675,Pangoro,NULL,Fighting,Dark,X,95,124,78,69,71,58,0,65,1092,Level 32 With Dark-Type Pokemon In Party
+676,Furfrou,NULL,Normal,NULL,X,75,80,60,65,90,102,0,160,NULL,NULL
+677,Espurr,NULL,Psychic,NULL,X,62,48,54,63,60,68,0,190,NULL,NULL
+678,Meowstic,NULL,Psychic,NULL,X,74,48,76,83,81,104,0,75,1095,Level 25
+679,Honedge,NULL,Steel,Ghost,X,45,80,100,35,37,28,0,180,NULL,NULL
+680,Doublade,NULL,Steel,Ghost,X,59,110,150,45,49,35,0,90,25,Level 35
+681,Aegislash,NULL,Steel,Ghost,X,60,50,140,50,140,60,0,45,26,Dusk Stone
+682,Spritzee,NULL,Fairy,NULL,X,78,52,60,63,65,23,0,200,NULL,NULL
+683,Aromatisse,NULL,Fairy,NULL,X,101,72,72,99,89,29,0,140,1101,Sachet
+684,Swirlix,NULL,Fairy,NULL,X,62,48,66,59,57,49,0,200,NULL,NULL
+685,Slurpuff,NULL,Fairy,NULL,X,82,80,86,85,75,72,0,140,1103,Whipped Dream
+686,Inkay,NULL,Dark,Psychic,X,53,54,53,37,46,45,0,190,NULL,NULL
+687,Malamar,NULL,Dark,Psychic,X,86,92,88,68,75,73,0,80,1105,Level 30 With Console Upside-Down
+688,Binacle,NULL,Rock,Water,X,42,52,67,39,56,50,0,120,NULL,NULL
+689,Barbaracle,NULL,Rock,Water,X,72,105,115,54,86,68,0,45,1107,Level 39
+690,Skrelp,NULL,Poison,Water,X,50,60,60,60,60,30,0,225,NULL,NULL
+691,Dragalge,NULL,Poison,Dragon,X,65,75,90,97,123,44,0,55,1110,Level 48
+692,Clauncher,NULL,Water,NULL,X,50,53,62,58,63,44,0,225,NULL,NULL
+693,Clawitzer,NULL,Water,NULL,X,71,73,88,120,89,59,0,55,1112,Level 37
+694,Helioptile,NULL,Electric,Normal,X,44,38,33,61,43,70,0,190,NULL,NULL
+695,Heliolisk,NULL,Electric,Normal,X,62,55,52,109,94,109,0,75,1122,Sun Stone
+696,Tyrunt,NULL,Rock,Dragon,X,58,89,77,45,45,48,0,45,NULL,NULL
+697,Tyrantrum,NULL,Rock,Dragon,X,82,121,119,69,59,71,0,45,1124,Level 39 During The Day
+698,Amaura,NULL,Rock,Ice,X,77,59,50,67,63,46,0,45,NULL,NULL
+699,Aurorus,NULL,Rock,Ice,X,123,77,72,99,92,58,0,45,1126,Level 39 During The Night
+700,Sylveon,NULL,Fairy,NULL,X,95,65,65,110,130,60,0,45,228,Knowing A Fairy Move With 2+ Levels Of Affection
+701,Hawlucha,NULL,Fighting,Flying,X,78,92,75,74,63,118,0,100,NULL,NULL
+702,Dedenne,NULL,Electric,Fairy,X,67,58,57,81,67,101,0,180,NULL,NULL
+703,Carbink,NULL,Rock,Fairy,X,50,50,150,50,150,50,0,60,NULL,NULL
+704,Goomy,NULL,Dragon,NULL,X,45,50,35,55,75,40,0,45,NULL,NULL
+705,Sliggoo,NULL,Dragon,NULL,X,68,75,53,83,113,60,0,45,1133,Level 40
+706,Goodra,NULL,Dragon,NULL,X,90,100,70,110,150,80,0,45,1134,Level 50 When Raining Or Foggy Outside Battle
+707,Klefki,NULL,Steel,Fairy,X,57,80,91,80,87,75,0,75,NULL,NULL
+708,Phantump,NULL,Ghost,Grass,X,43,70,48,50,60,38,0,120,NULL,NULL
+709,Trevenant,NULL,Ghost,Grass,X,85,110,76,65,82,56,0,60,1137,NULL
+710,Pumpkaboo,NULL,Ghost,Grass,X,49,66,70,44,55,51,0,120,NULL,NULL
+711,Gourgeist,NULL,Ghost,Grass,X,65,90,122,58,75,84,0,60,1140,NULL
+712,Bergmite,NULL,Ice,NULL,X,55,69,85,32,35,28,0,190,NULL,NULL
+713,Avalugg,NULL,Ice,NULL,X,95,117,184,44,46,28,0,55,1142,Level 37
+714,Noibat,NULL,Flying,Dragon,X,40,30,35,45,40,55,0,190,NULL,NULL
+715,Noivern,NULL,Flying,Dragon,X,85,70,80,97,80,123,0,45,1144,Level 48
+716,Xerneas,Legendary,Fairy,NULL,X,126,131,95,131,98,99,0,45,NULL,NULL
+717,Yveltal,Legendary,Dark,Flying,X,126,131,95,131,98,99,0,45,NULL,NULL
+718,Zygarde,Legendary,Dragon,Ground,X,108,100,121,81,95,95,0,3,NULL,NULL
+719,Diancie,Mythical,Rock,Fairy,X,50,100,150,100,150,50,0,3,NULL,NULL
+720,Hoopa,Mythical,Psychic,Ghost,X,80,110,60,150,130,70,0,3,NULL,NULL
+721,Volcanion,Mythical,Fire,Water,X,80,110,120,130,90,70,0,3,NULL,NULL
+722,Rowlet,NULL,Grass,Flying,Sun,68,55,55,50,50,40,0,45,NULL,NULL
+723,Dartrix,NULL,Grass,Flying,Sun,78,75,75,70,70,52,0,45,1246,Level 17
+724,Decidueye,NULL,Grass,Ghost,Sun,78,107,75,100,100,70,0,45,1247,Level 34
+725,Litten,NULL,Fire,NULL,Sun,45,65,40,60,40,70,0,45,NULL,NULL
+726,Torracat,NULL,Fire,NULL,Sun,65,85,50,80,50,90,0,45,1249,Level 17
+727,Incineroar,NULL,Fire,Dark,Sun,95,115,90,80,90,60,0,45,1250,Level 34
+728,Popplio,NULL,Water,NULL,Sun,50,54,54,66,56,40,0,45,NULL,NULL
+729,Brionne,NULL,Water,NULL,Sun,60,69,69,91,81,50,0,45,1252,Level 17
+730,Primarina,NULL,Water,Fairy,Sun,80,74,74,126,116,60,0,45,1253,Level 34
+731,Pikipek,NULL,Normal,Flying,Sun,35,75,30,30,30,65,0,255,NULL,NULL
+732,Trumbeak,NULL,Normal,Flying,Sun,55,85,50,40,50,75,0,120,1256,Level 14
+733,Toucannon,NULL,Normal,Flying,Sun,80,120,75,75,75,60,0,45,1257,Level 28
+734,Yungoos,NULL,Normal,NULL,Sun,48,70,30,30,30,45,0,255,NULL,NULL
+735,Gumshoos,NULL,Normal,NULL,Sun,88,110,60,55,60,45,0,127,1259,Level 20 During The Day
+736,Grubbin,NULL,Bug,NULL,Sun,47,62,45,55,45,46,0,255,NULL,NULL
+737,Charjabug,NULL,Bug,Electric,Sun,57,82,95,55,75,36,0,120,1261,Level 20
+738,Vikavolt,NULL,Bug,Electric,Sun,77,70,90,145,75,43,0,45,1262,In a Special Magnetic Field
+739,Crabrawler,NULL,Fighting,NULL,Sun,47,82,57,42,47,63,0,225,NULL,NULL
+740,Crabominable,NULL,Fighting,Ice,Sun,97,132,77,62,67,43,0,60,1264,At Mount Lanakila In Alola
+741,Oricorio,NULL,Fire,Flying,Sun,75,70,70,98,70,93,0,45,NULL,NULL
+742,Cutiefly,NULL,Bug,Fairy,Sun,40,45,40,55,40,84,0,190,NULL,NULL
+743,Ribombee,NULL,Bug,Fairy,Sun,60,55,60,96,70,124,0,75,1268,Level 25
+744,Rockruff,NULL,Rock,NULL,Sun,45,65,40,30,40,60,0,190,NULL,NULL
+745,Lycanroc,NULL,Rock,NULL,Sun,75,115,65,55,65,112,0,90,1270,Level 25 During The Day
+746,Wishiwashi,NULL,Water,NULL,Sun,45,20,20,25,25,40,0,60,NULL,NULL
+747,Mareanie,NULL,Poison,Water,Sun,50,53,62,43,52,45,0,190,NULL,NULL
+748,Toxapex,NULL,Poison,Water,Sun,50,63,152,53,142,35,0,75,1273,Level 38
+749,Mudbray,NULL,Ground,NULL,Sun,70,100,70,45,55,45,0,190,NULL,NULL
+750,Mudsdale,NULL,Ground,NULL,Sun,100,125,100,55,85,35,0,60,1275,Level 30
+751,Dewpider,NULL,Water,Bug,Sun,38,40,52,40,72,27,0,200,NULL,NULL
+752,Araquanid,NULL,Water,Bug,Sun,68,70,92,50,132,42,0,100,1278,Level 22
+753,Fomantis,NULL,Grass,NULL,Sun,40,55,35,50,35,35,0,190,NULL,NULL
+754,Lurantis,NULL,Grass,NULL,Sun,70,105,90,80,90,45,0,75,1280,Level 34 During The Day
+755,Morelull,NULL,Grass,Fairy,Sun,40,35,55,65,75,15,0,190,NULL,NULL
+756,Shiinotic,NULL,Grass,Fairy,Sun,60,45,80,90,100,30,0,75,1282,Level 24
+757,Salandit,NULL,Poison,Fire,Sun,48,44,40,71,40,77,0,120,NULL,NULL
+758,Salazzle,NULL,Poison,Fire,Sun,68,64,60,111,60,117,0,45,1284,Level 33 When Female
+759,Stufful,NULL,Normal,Fighting,Sun,70,75,50,45,50,50,0,140,NULL,NULL
+760,Bewear,NULL,Normal,Fighting,Sun,120,125,80,55,60,60,0,70,1286,Level 27
+761,Bounsweet,NULL,Grass,NULL,Sun,42,30,38,30,38,32,0,235,NULL,NULL
+762,Steenee,NULL,Grass,NULL,Sun,52,40,48,40,48,62,0,120,1289,Level 18
+763,Tsareena,NULL,Grass,NULL,Sun,72,120,98,50,98,72,0,45,1290,Knowing Stomp
+764,Comfey,NULL,Fairy,NULL,Sun,51,52,90,82,110,100,0,60,NULL,NULL
+765,Oranguru,NULL,Normal,Psychic,Sun,90,60,80,90,110,60,0,45,NULL,NULL
+766,Passimian,NULL,Fighting,NULL,Sun,100,120,90,40,60,80,0,45,NULL,NULL
+767,Wimpod,NULL,Bug,Water,Sun,25,35,40,20,30,80,0,90,NULL,NULL
+768,Golisopod,NULL,Bug,Water,Sun,75,125,140,60,90,40,0,45,1294,Level 30
+769,Sandygast,NULL,Ghost,Ground,Sun,55,55,80,70,45,15,0,140,NULL,NULL
+770,Palossand,NULL,Ghost,Ground,Sun,85,75,110,100,75,35,0,60,1296,Level 42
+771,Pyukumuku,NULL,Water,NULL,Sun,55,60,130,30,130,5,0,60,NULL,NULL
+772,Type: Null,Sub-Legendary,Normal,NULL,Sun,95,95,95,95,95,59,0,3,NULL,NULL
+773,Silvally,Sub-Legendary,Normal,NULL,Sun,95,95,95,95,95,95,0,3,1300,NULL
+774,Minior,NULL,Rock,Flying,Sun,60,60,100,60,100,60,0,30,NULL,NULL
+775,Komala,NULL,Normal,NULL,Sun,65,115,65,75,95,65,0,45,NULL,NULL
+776,Turtonator,NULL,Fire,Dragon,Sun,60,78,135,91,85,36,0,70,NULL,NULL
+777,Togedemaru,NULL,Electric,Steel,Sun,65,98,63,40,73,96,0,180,NULL,NULL
+778,Mimikyu,NULL,Ghost,Fairy,Sun,55,90,80,50,105,96,0,45,NULL,NULL
+779,Bruxish,NULL,Water,Psychic,Sun,68,105,70,70,70,92,0,80,NULL,NULL
+780,Drampa,NULL,Normal,Dragon,Sun,78,60,85,135,91,36,0,70,NULL,NULL
+781,Dhelmise,NULL,Ghost,Grass,Sun,70,131,100,86,90,40,0,25,NULL,NULL
+782,Jangmo-o,NULL,Dragon,NULL,Sun,45,55,65,45,45,45,0,45,NULL,NULL
+783,Hakamo-o,NULL,Dragon,Fighting,Sun,55,75,90,65,70,65,0,45,1311,Level 35
+784,Kommo-o,NULL,Dragon,Fighting,Sun,75,110,125,100,105,85,0,45,1312,Level 45
+785,Tapu Koko,Sub-Legendary,Electric,Fairy,Sun,70,115,85,95,75,130,0,3,NULL,NULL
+786,Tapu Lele,Sub-Legendary,Psychic,Fairy,Sun,70,85,75,130,115,95,0,3,NULL,NULL
+787,Tapu Bulu,Sub-Legendary,Grass,Fairy,Sun,70,130,115,85,95,75,0,3,NULL,NULL
+788,Tapu Fini,Sub-Legendary,Water,Fairy,Sun,70,75,115,95,130,85,0,3,NULL,NULL
+789,Cosmog,Legendary,Psychic,NULL,Sun,43,29,31,29,31,37,0,45,NULL,NULL
+790,Cosmoem,Legendary,Psychic,NULL,Sun,43,29,131,29,131,37,0,45,1318,Level 43
+791,Solgaleo,Legendary,Psychic,Steel,Sun,137,137,107,113,89,97,0,45,1320,Level 53 In Sun Or Ultra Sun
+792,Lunala,Legendary,Psychic,Ghost,Sun,137,113,89,137,107,97,0,45,1320,Level 53 In Moon Or Ultra Moon
+793,Nihilego,Sub-Legendary,Rock,Poison,Sun,109,53,47,127,131,103,0,45,NULL,NULL
+794,Buzzwole,Sub-Legendary,Bug,Fighting,Sun,107,139,139,53,53,79,0,45,NULL,NULL
+795,Pheromosa,Sub-Legendary,Bug,Fighting,Sun,71,137,37,137,37,151,0,45,NULL,NULL
+796,Xurkitree,Sub-Legendary,Electric,NULL,Sun,83,89,71,173,71,83,0,45,NULL,NULL
+797,Celesteela,Sub-Legendary,Steel,Flying,Sun,97,101,103,107,101,61,0,45,NULL,NULL
+798,Kartana,Sub-Legendary,Grass,Steel,Sun,59,181,131,59,31,109,0,45,NULL,NULL
+799,Guzzlord,Sub-Legendary,Dark,Dragon,Sun,223,101,53,97,53,43,0,45,NULL,NULL
+800,Necrozma,Legendary,Psychic,NULL,Sun,97,107,101,127,89,79,0,255,NULL,NULL
+801,Magearna,Mythical,Steel,Fairy,Sun,80,95,115,130,115,65,0,3,NULL,NULL
+802,Marshadow,Mythical,Fighting,Ghost,Sun,90,125,80,90,90,125,0,3,NULL,NULL
+803,Poipole,Sub-Legendary,Poison,NULL,Ultra Sun,67,73,67,73,67,73,0,45,NULL,NULL
+804,Naganadel,Sub-Legendary,Poison,Dragon,Ultra Sun,73,73,73,127,73,121,0,45,1334,Knowing Dragon Pulse
+805,Stakataka,Sub-Legendary,Rock,Steel,Ultra Sun,61,131,211,53,101,13,0,30,NULL,NULL
+806,Blacephalon,Sub-Legendary,Fire,Ghost,Ultra Sun,53,127,53,151,79,107,0,30,NULL,NULL
+807,Zeraora,Mythical,Electric,NULL,Ultra Sun,88,112,75,102,80,143,0,3,NULL,NULL
+808,Meltan,Mythical,Steel,NULL,Pokémon GO,46,65,65,55,35,34,0,3,NULL,NULL
+809,Melmetal,Mythical,Steel,NULL,Pokémon GO,135,143,143,80,65,34,0,3,1339,400 Meltan Candy
+810,Grookey,NULL,Grass,NULL,Sword,50,65,50,40,40,65,0,45,NULL,NULL
+811,Thwackey,NULL,Grass,NULL,Sword,70,85,70,55,60,80,0,45,1439,Level 16
+812,Rillaboom,NULL,Grass,NULL,Sword,100,125,90,60,70,85,0,45,1440,Level 35
+813,Scorbunny,NULL,Fire,NULL,Sword,50,71,40,40,40,69,0,45,NULL,NULL
+814,Raboot,NULL,Fire,NULL,Sword,65,86,50,55,60,94,0,45,1442,Level 16
+815,Cinderace,NULL,Fire,NULL,Sword,80,116,75,65,75,119,0,45,1443,Level 35
+816,Sobble,NULL,Water,NULL,Sword,50,40,40,70,40,70,0,45,NULL,NULL
+817,Drizzile,NULL,Water,NULL,Sword,65,60,55,95,55,90,0,45,1445,Level 16
+818,Inteleon,NULL,Water,NULL,Sword,70,85,65,125,65,120,0,45,1446,Level 35
+819,Skwovet,NULL,Normal,NULL,Sword,70,55,55,35,35,25,0,255,NULL,NULL
+820,Greedent,NULL,Normal,NULL,Sword,120,95,95,55,75,20,0,90,1462,Level 24
+821,Rookidee,NULL,Flying,NULL,Sword,38,47,35,33,35,57,0,255,NULL,NULL
+822,Corvisquire,NULL,Flying,NULL,Sword,68,67,55,43,55,77,0,120,1469,Level 18
+823,Corviknight,NULL,Flying,Steel,Sword,98,87,105,53,85,67,0,45,1470,Level 38
+824,Blipbug,NULL,Bug,NULL,Sword,25,20,20,25,45,45,0,255,NULL,NULL
+825,Dottler,NULL,Bug,Psychic,Sword,50,35,80,50,90,30,0,120,1485,Level 10
+826,Orbeetle,NULL,Bug,Psychic,Sword,60,45,110,80,120,90,0,45,1486,Level 30
+827,Nickit,NULL,Dark,NULL,Sword,40,28,28,47,52,50,0,255,NULL,NULL
+828,Thievul,NULL,Dark,NULL,Sword,70,58,58,87,92,90,0,127,1488,Level 18
+829,Gossifleur,NULL,Grass,NULL,Sword,40,40,60,40,60,10,0,190,NULL,NULL
+830,Eldegoss,NULL,Grass,NULL,Sword,60,50,90,80,120,60,0,75,1490,Level 20
+831,Wooloo,NULL,Normal,NULL,Sword,42,40,55,40,45,48,0,255,NULL,NULL
+832,Dubwool,NULL,Normal,NULL,Sword,72,80,100,60,90,88,0,127,1492,Level 24
+833,Chewtle,NULL,Water,NULL,Sword,50,64,50,38,38,44,0,255,NULL,NULL
+834,Drednaw,NULL,Water,Rock,Sword,90,115,90,48,68,74,0,75,1494,Level 22
+835,Yamper,NULL,Electric,NULL,Sword,59,45,50,40,50,26,0,255,NULL,NULL
+836,Boltund,NULL,Electric,NULL,Sword,69,90,60,90,60,121,0,45,1496,Level 25
+837,Rolycoly,NULL,Rock,NULL,Sword,30,40,50,40,50,30,0,255,NULL,NULL
+838,Carkol,NULL,Rock,Fire,Sword,80,60,90,60,70,50,0,120,1498,Level 18
+839,Coalossal,NULL,Rock,Fire,Sword,110,80,120,80,90,30,0,45,1499,Level 34
+840,Applin,NULL,Grass,Dragon,Sword,40,40,80,40,40,20,0,255,NULL,NULL
+841,Flapple,NULL,Grass,Dragon,Sword,70,110,80,95,60,70,0,45,1501,Tart Apple
+842,Appletun,NULL,Grass,Dragon,Sword,110,85,80,100,80,30,0,45,1501,Sweet Apple
+843,Silicobra,NULL,Ground,NULL,Sword,52,57,75,35,50,46,0,255,NULL,NULL
+844,Sandaconda,NULL,Ground,NULL,Sword,72,107,125,65,70,71,0,120,1504,Level 36
+845,Cramorant,NULL,Flying,Water,Sword,70,85,55,85,95,85,0,45,NULL,NULL
+846,Arrokuda,NULL,Water,NULL,Sword,41,63,40,40,30,66,0,255,NULL,NULL
+847,Barraskewda,NULL,Water,NULL,Sword,61,123,60,60,50,136,0,60,1507,Level 26
+848,Toxel,NULL,Electric,Poison,Sword,40,38,35,54,35,40,0,75,NULL,NULL
+849,Toxtricity,NULL,Electric,Poison,Sword,75,98,70,114,70,75,0,45,14,"Level 30 With An Adamant, Brave, Docile, Hardy, Hasty, Impish, Jolly, Lax, Naive, Naughty, Quirky, Rash, or Sassy Nature"
+850,Sizzlipede,NULL,Fire,Bug,Sword,50,65,45,50,50,45,0,190,NULL,NULL
+851,Centiskorch,NULL,Fire,Bug,Sword,100,115,65,90,90,65,0,75,1509,Level 28
+852,Clobbopus,NULL,Fighting,NULL,Sword,50,68,60,50,50,32,0,180,NULL,NULL
+853,Grapploct,NULL,Fighting,NULL,Sword,80,118,90,70,80,42,0,45,1511,Knowing Taunt
+854,Sinistea,NULL,Ghost,NULL,Sword,40,45,45,74,54,50,0,120,NULL,NULL
+855,Polteageist,NULL,Ghost,NULL,Sword,60,65,65,134,114,70,0,60,1513,Cracked Pot
+856,Hatenna,NULL,Psychic,NULL,Sword,42,30,45,56,53,39,0,235,NULL,NULL
+857,Hattrem,NULL,Psychic,NULL,Sword,57,40,65,86,73,49,0,120,1515,Level 32
+858,Hatterene,NULL,Psychic,Fairy,Sword,57,90,95,136,103,29,0,45,1516,Level 42
+859,Impidimp,NULL,Dark,Fairy,Sword,45,45,30,55,40,50,0,255,NULL,NULL
+860,Morgrem,NULL,Dark,Fairy,Sword,65,60,45,75,55,70,0,120,1518,Level 32
+861,Grimmsnarl,NULL,Dark,Fairy,Sword,95,120,65,95,75,60,0,45,1519,Level 42
+862,Obstagoon,NULL,Dark,Normal,Sword,93,90,101,60,81,95,0,45,1467,Level 35 At Night
+863,Perrserker,NULL,Steel,NULL,Sword,70,110,100,50,60,50,0,90,98,Level 28
+864,Cursola,NULL,Ghost,NULL,Sword,60,95,50,145,130,30,0,30,1389,Level 38
+865,Sirfetch'd,NULL,Fighting,NULL,Sword,62,135,95,68,82,65,0,45,1369,Land Three Critical Hits In One Battle
+866,Mr. Rime,NULL,Ice,Psychic,Sword,80,85,75,110,100,70,0,45,1377,Level 42
+867,Runerigus,NULL,Ground,Ghost,Sword,58,95,145,50,105,30,0,90,1464,Take 49+ Damage and Travel Under Stone Bridge in Dusty Bowl in Galar
+868,Milcery,NULL,Fairy,NULL,Sword,45,40,40,50,61,34,0,200,NULL,NULL
+869,Alcremie,NULL,Fairy,NULL,Sword,65,60,75,110,121,64,0,100,1483,Spin Clockwise Less Than 5 Seconds During The Day
+870,Falinks,NULL,Fighting,NULL,Sword,60,100,100,70,60,75,0,45,NULL,NULL
+871,Pincurchin,NULL,Electric,NULL,Sword,48,101,95,91,85,15,0,75,NULL,NULL
+872,Snom,NULL,Ice,Bug,Sword,30,25,35,45,30,20,0,190,NULL,NULL
+873,Frosmoth,NULL,Ice,Bug,Sword,70,65,60,125,90,65,0,75,1481,During The Night
+874,Stonjourner,NULL,Rock,NULL,Sword,100,125,135,20,20,70,0,60,NULL,NULL
+875,Eiscue,NULL,Ice,NULL,Sword,75,80,110,65,90,50,0,60,NULL,NULL
+876,Indeedee,NULL,Psychic,Normal,Sword,60,65,55,105,95,95,0,30,NULL,NULL
+877,Morpeko,NULL,Electric,Dark,Sword,58,95,58,70,58,97,0,180,NULL,NULL
+878,Cufant,NULL,Steel,NULL,Sword,72,80,49,40,49,40,0,190,NULL,NULL
+879,Copperajah,NULL,Steel,NULL,Sword,122,130,69,80,69,30,0,90,1475,Level 34
+880,Dracozolt,NULL,Electric,Dragon,Sword,90,100,90,80,70,75,0,45,NULL,NULL
+881,Arctozolt,NULL,Electric,Ice,Sword,90,100,90,90,80,55,0,45,NULL,NULL
+882,Dracovish,NULL,Water,Dragon,Sword,90,90,100,70,80,75,0,45,NULL,NULL
+883,Arctovish,NULL,Water,Ice,Sword,90,90,100,80,90,55,0,45,NULL,NULL
+884,Duraludon,NULL,Steel,Dragon,Sword,70,95,115,120,50,85,0,45,NULL,NULL
+885,Dreepy,NULL,Dragon,Ghost,Sword,28,60,30,40,30,82,0,45,NULL,NULL
+886,Drakloak,NULL,Dragon,Ghost,Sword,68,80,50,60,50,102,0,45,1472,Level 50
+887,Dragapult,NULL,Dragon,Ghost,Sword,88,120,75,100,75,142,0,45,1473,Level 60
+888,Zacian,Legendary,Fairy,NULL,Sword,92,120,115,80,115,138,0,10,NULL,NULL
+889,Zamazenta,Legendary,Fighting,NULL,Sword,92,120,115,80,115,138,0,10,NULL,NULL
+890,Eternatus,Legendary,Poison,Dragon,Sword,140,85,95,145,95,130,0,255,NULL,NULL
+891,Kubfu,Sub-Legendary,Fighting,NULL,Sword,60,90,60,53,50,72,0,3,NULL,NULL
+892,Urshifu,Sub-Legendary,Fighting,Dark,Sword,100,130,100,63,60,97,0,3,38,Conquer the Tower of Darkness in Galar's Isle of Armor
+893,Zarude,Mythical,Dark,Grass,Sword,105,120,105,70,95,105,0,3,NULL,NULL
+894,Regieleki,Sub-Legendary,Electric,NULL,Sword,80,100,50,100,50,200,0,3,NULL,NULL
+895,Regidrago,Sub-Legendary,Dragon,NULL,Sword,200,100,50,100,50,80,0,3,NULL,NULL
+896,Glastrier,Sub-Legendary,Ice,NULL,Sword,100,145,130,65,110,30,0,3,NULL,NULL
+897,Spectrier,Sub-Legendary,Ghost,NULL,Sword,100,65,60,145,80,130,0,3,NULL,NULL
+898,Calyrex,Legendary,Psychic,Grass,Sword,100,80,80,80,80,80,0,3,NULL,NULL
+899,Wyrdeer,NULL,Normal,Psychic,Legends Arceus,103,105,72,105,75,65,0,135,358,Use Psyshield Bash 20 times in Agile Style in Hisui
+900,Kleavor,NULL,Bug,Rock,Legends Arceus,70,130,95,45,75,85,0,115,219,Black Augurite on Scyther in Hisui
+901,Ursaluna,NULL,Ground,Normal,Legends Arceus,130,140,105,45,80,50,0,75,341,Peat Block During a Full Moon in Crimson Mirelands
+902,Basculegion,NULL,Water,Ghost,Legends Arceus,120,112,65,80,75,78,0,135,1623,Receive 294+ Recoil Damage Without Fainting
+903,Sneasler,NULL,Fighting,Poison,Legends Arceus,80,130,60,40,80,120,0,135,1630,Razor Claw During the Day
+904,Overqwil,NULL,Dark,Poison,Legends Arceus,85,115,95,65,65,85,0,135,1625,Use Barb Barrage 20 times in Strong Style In Hisui
+905,Enamorus,Sub-Legendary,Fairy,Flying,Legends Arceus,74,115,70,135,80,106,0,3,NULL,NULL
+906,Sprigatito,NULL,Grass,NULL,Scarlet,40,61,54,45,45,65,0,45,NULL,NULL
+907,Floragato,NULL,Grass,NULL,Scarlet,61,80,63,60,63,83,0,45,1642,Level 16
+908,Meowscarada,NULL,Grass,Dark,Scarlet,76,110,70,81,70,123,0,45,1666,Level 36
+909,Fuecoco,NULL,Fire,NULL,Scarlet,67,45,59,63,40,36,0,45,NULL,NULL
+910,Crocalor,NULL,Fire,NULL,Scarlet,81,55,78,49,58,90,0,45,1643,Level 16
+911,Skeledirge,NULL,Fire,Ghost,Scarlet,104,75,100,110,75,66,0,45,1669,Level 36
+912,Quaxly,NULL,Water,NULL,Scarlet,55,65,45,50,45,50,0,45,NULL,NULL
+913,Quaxwell,NULL,Water,NULL,Scarlet,70,85,65,65,60,65,0,45,1644,Level 16
+914,Quaquaval,NULL,Water,Fighting,Scarlet,85,120,80,85,75,85,0,45,1674,Level 36
+915,Lechonk,NULL,Normal,NULL,Scarlet,54,45,40,35,45,35,0,255,NULL,NULL
+916,Oinkologne,NULL,Normal,NULL,Scarlet,110,100,75,59,80,65,0,100,1649,Level 18
+917,Tarountula,NULL,Bug,NULL,Scarlet,35,41,45,29,40,20,0,255,NULL,NULL
+918,Spidops,NULL,Bug,NULL,Scarlet,60,79,92,52,86,35,0,120,1712,Level 15
+919,Nymble,NULL,Bug,NULL,Scarlet,33,46,40,21,25,45,0,190,NULL,NULL
+920,Lokix,NULL,Bug,Dark,Scarlet,71,102,78,52,55,92,0,30,1714,Level 24
+921,Pawmi,NULL,Electric,NULL,Scarlet,45,50,20,40,25,60,0,190,NULL,NULL
+922,Pawmo,NULL,Electric,Fighting,Scarlet,60,75,40,50,40,85,0,80,1650,Level 18
+923,Pawmot,NULL,Electric,Fighting,Scarlet,70,115,70,70,60,105,0,45,1698,After Walking 1000 Steps using Let's Go
+924,Tandemaus,NULL,Normal,NULL,Scarlet,50,50,45,40,45,75,0,150,NULL,NULL
+925,Maushold,NULL,Normal,NULL,Scarlet,74,75,70,65,75,111,0,75,1691,Level 25 in a Fight
+926,Fidough,NULL,Fairy,NULL,Scarlet,37,55,70,30,55,65,0,190,NULL,NULL
+927,Dachsbun,NULL,Fairy,NULL,Scarlet,57,80,115,50,80,95,0,90,1653,Level 26
+928,Smoliv,NULL,Grass,Normal,Scarlet,41,35,45,58,51,30,0,255,NULL,NULL
+929,Dolliv,NULL,Grass,Normal,Scarlet,52,53,60,78,78,33,0,120,1651,Level 25
+930,Arboliva,NULL,Grass,Normal,Scarlet,78,69,90,125,109,39,0,45,1696,Level 35
+931,Squawkabilly,NULL,Normal,Flying,Scarlet,82,96,51,45,51,92,0,190,NULL,NULL
+932,Nacli,NULL,Rock,NULL,Scarlet,55,55,75,35,35,25,0,255,NULL,NULL
+933,Naclstack,NULL,Rock,NULL,Scarlet,60,60,100,35,65,35,0,120,1750,Level 24
+934,Garganacl,NULL,Rock,NULL,Scarlet,100,100,130,45,90,35,0,45,1751,Level 38
+935,Charcadet,NULL,Fire,NULL,Scarlet,40,50,40,50,40,35,0,90,NULL,NULL
+936,Armarouge,NULL,Fire,Psychic,Scarlet,85,60,100,125,80,75,0,25,1668,Auspicious Armor
+937,Ceruledge,NULL,Fire,Ghost,Scarlet,75,125,80,60,100,85,0,25,1668,Malicious Armor
+938,Tadbulb,NULL,Electric,NULL,Scarlet,61,31,41,59,35,45,0,190,NULL,NULL
+939,Bellibolt,NULL,Electric,NULL,Scarlet,109,64,91,103,83,45,0,50,1680,Thunder Stone
+940,Wattrel,NULL,Electric,Flying,Scarlet,40,40,35,55,40,70,0,180,NULL,NULL
+941,Kilowattrel,NULL,Electric,Flying,Scarlet,70,70,60,105,60,125,0,90,1726,Level 25
+942,Maschiff,NULL,Dark,NULL,Scarlet,60,78,60,40,51,51,0,150,NULL,NULL
+943,Mabosstiff,NULL,Dark,NULL,Scarlet,80,120,90,60,70,85,0,75,1755,Level 30
+944,Shroodle,NULL,Poison,Normal,Scarlet,40,65,35,40,35,75,0,190,NULL,NULL
+945,Grafaiai,NULL,Poison,Normal,Scarlet,63,95,65,80,72,110,0,90,1708,Level 28
+946,Bramblin,NULL,Grass,Ghost,Scarlet,40,65,30,45,35,60,0,190,NULL,NULL
+947,Brambleghast,NULL,Grass,Ghost,Scarlet,55,115,70,80,70,90,0,45,1702,After Walking 1000 Steps using Let's Go
+948,Toedscool,NULL,Ground,Grass,Scarlet,40,40,35,50,100,70,0,190,NULL,NULL
+949,Toedscruel,NULL,Ground,Grass,Scarlet,80,70,65,80,120,100,0,90,1720,Level 30
+950,Klawf,NULL,Rock,NULL,Scarlet,70,100,115,35,55,75,0,120,NULL,NULL
+951,Capsakid,NULL,Grass,NULL,Scarlet,50,62,40,62,40,50,0,190,NULL,NULL
+952,Scovillain,NULL,Grass,Fire,Scarlet,65,108,65,108,65,75,0,50,1687,Fire Stone
+953,Rellor,NULL,Bug,NULL,Scarlet,41,50,60,31,58,30,0,190,NULL,NULL
+954,Rabsca,NULL,Bug,Psychic,Scarlet,75,50,85,115,100,45,0,45,1700,After Walking 1000 Steps using Let's Go
+955,Flittle,NULL,Psychic,NULL,Scarlet,30,35,30,55,30,75,0,120,NULL,NULL
+956,Espathra,NULL,Psychic,NULL,Scarlet,95,60,60,101,60,105,0,60,1716,Level 35
+957,Tinkatink,NULL,Fairy,Steel,Scarlet,50,45,45,35,64,58,0,190,NULL,NULL
+958,Tinkatuff,NULL,Fairy,Steel,Scarlet,65,55,55,45,82,78,0,90,1729,Level 24
+959,Tinkaton,NULL,Fairy,Steel,Scarlet,85,75,77,70,105,94,0,45,1730,Level 38
+960,Wiglett,NULL,Water,NULL,Scarlet,10,55,25,35,25,95,0,255,NULL,NULL
+961,Wugtrio,NULL,Water,NULL,Scarlet,35,100,50,50,70,120,0,50,1660,Level 26
+962,Bombirdier,NULL,Flying,Dark,Scarlet,70,103,85,60,85,82,0,25,NULL,NULL
+963,Finizen,NULL,Water,NULL,Scarlet,70,45,40,45,40,75,0,200,NULL,NULL
+964,Palafin,NULL,Water,NULL,Scarlet,100,70,72,53,62,100,0,45,1693,Level 38 while in a Union Circle group
+965,Varoom,NULL,Steel,Poison,Scarlet,45,70,63,30,45,47,0,190,NULL,NULL
+966,Revavroom,NULL,Steel,Poison,Scarlet,80,119,90,54,67,90,0,75,1718,Level 40
+967,Cyclizar,NULL,Dragon,Normal,Scarlet,70,95,65,85,65,121,0,190,NULL,NULL
+968,Orthworm,NULL,Steel,NULL,Scarlet,70,85,145,60,55,65,0,25,NULL,NULL
+969,Glimmet,NULL,Rock,Poison,Scarlet,48,35,42,105,60,60,0,70,NULL,NULL
+970,Glimmora,NULL,Rock,Poison,Scarlet,83,55,90,130,81,86,0,25,1753,Level 35
+971,Greavard,NULL,Ghost,NULL,Scarlet,50,61,60,30,55,34,0,120,NULL,NULL
+972,Houndstone,NULL,Ghost,NULL,Scarlet,72,101,100,50,97,68,0,60,1663,Level 30 At Night
+973,Flamigo,NULL,Flying,Fighting,Scarlet,82,115,74,75,64,90,0,100,NULL,NULL
+974,Cetoddle,NULL,Ice,NULL,Scarlet,108,68,45,30,40,43,0,150,NULL,NULL
+975,Cetitan,NULL,Ice,NULL,Scarlet,170,113,65,45,55,73,0,50,1689,Ice Stone
+976,Veluza,NULL,Water,Psychic,Scarlet,90,102,73,78,65,70,0,100,NULL,NULL
+977,Dondozo,NULL,Water,NULL,Scarlet,150,100,115,65,65,35,0,25,NULL,NULL
+978,Tatsugiri,NULL,Dragon,Water,Scarlet,68,50,60,120,95,82,0,100,NULL,NULL
+979,Annihilape,NULL,Fighting,Ghost,Scarlet,110,115,80,50,90,90,0,45,924,After Using Rage Fist 20 Times
+980,Clodsire,NULL,Poison,Ground,Scarlet,130,75,60,45,100,20,0,90,1654,Level 20
+981,Farigiraf,NULL,Normal,Psychic,Scarlet,120,90,70,110,70,60,0,45,327,Knowing Twin Beam
+982,Dudunsparce,NULL,Normal,NULL,Scarlet,125,100,80,85,75,55,0,45,330,Knowing Hyper Drill
+983,Kingambit,NULL,Dark,Steel,Scarlet,100,135,120,60,85,50,0,25,999,After Defeating 3 Wild Bisharp That Are Holding a Leader's Crest
+984,Great Tusk,NULL,Ground,Fighting,Scarlet,115,131,131,53,53,87,0,30,NULL,NULL
+985,Scream Tail,NULL,Fairy,Psychic,Scarlet,115,65,99,65,115,111,0,50,NULL,NULL
+986,Brute Bonnet,NULL,Grass,Dark,Scarlet,111,127,99,79,99,55,0,50,NULL,NULL
+987,Flutter Mane,NULL,Ghost,Fairy,Scarlet,55,55,55,135,135,135,0,30,NULL,NULL
+988,Slither Wing,NULL,Bug,Fighting,Scarlet,85,135,79,85,105,81,0,30,NULL,NULL
+989,Sandy Shocks,NULL,Electric,Ground,Scarlet,85,81,97,121,85,101,0,30,NULL,NULL
+990,Iron Treads,NULL,Ground,Steel,Scarlet,90,112,120,72,70,106,0,30,NULL,NULL
+991,Iron Bundle,NULL,Ice,Water,Scarlet,56,80,114,124,60,136,0,50,NULL,NULL
+992,Iron Hands,NULL,Fighting,Electric,Scarlet,154,140,108,50,68,50,0,50,NULL,NULL
+993,Iron Jugulis,NULL,Dark,Flying,Scarlet,94,80,86,122,80,108,0,30,NULL,NULL
+994,Iron Moth,NULL,Fire,Poison,Scarlet,80,70,60,140,110,110,0,30,NULL,NULL
+995,Iron Thorns,NULL,Rock,Electric,Scarlet,100,130,110,70,84,72,0,30,NULL,NULL
+996,Frigibax,NULL,Dragon,Ice,Scarlet,65,75,45,35,45,55,0,45,NULL,NULL
+997,Arctibax,NULL,Dragon,Ice,Scarlet,90,95,66,45,65,62,0,25,1723,Level 35
+998,Baxcalibur,NULL,Dragon,Ice,Scarlet,115,145,92,75,86,87,0,10,1724,Level 54
+999,Gimmighoul,NULL,Ghost,NULL,Scarlet,45,30,70,75,70,10,0,45,NULL,NULL
+1000,Gholdengo,NULL,Steel,Ghost,Scarlet,87,60,95,133,97,84,0,45,1664,While Having 999 Gimmighoul Coins
+1001,Wo-Chien,Sub-Legendary,Dark,Grass,Scarlet,85,85,100,95,135,70,0,6,NULL,NULL
+1002,Chien-Pao,Sub-Legendary,Dark,Ice,Scarlet,80,120,80,90,65,135,0,6,NULL,NULL
+1003,Ting-Lu,Sub-Legendary,Dark,Ground,Scarlet,155,110,125,55,80,45,0,6,NULL,NULL
+1004,Chi-Yu,Sub-Legendary,Dark,Fire,Scarlet,55,80,80,135,120,100,0,6,NULL,NULL
+1005,Roaring Moon,NULL,Dragon,Dark,Scarlet,105,139,71,55,101,119,0,10,NULL,NULL
+1006,Iron Valiant,NULL,Fairy,Fighting,Scarlet,74,130,90,120,60,116,0,10,NULL,NULL
+1007,Koraidon,Legendary,Fighting,Dragon,Scarlet,100,135,115,85,100,135,0,3,NULL,NULL
+1008,Miraidon,Legendary,Electric,Dragon,Scarlet,100,85,100,135,115,135,0,3,NULL,NULL
+1009,Walking Wake,NULL,Water,Dragon,Scarlet,99,83,91,125,83,109,0,5,NULL,NULL
+1010,Iron Leaves,NULL,Grass,Psychic,Scarlet,90,130,88,70,108,104,0,5,NULL,NULL
+1011,Dipplin,NULL,Grass,Dragon,Scarlet,80,80,110,95,80,40,0,45,1501,Syrupy Apple
+1012,Poltchageist,NULL,Grass,Ghost,Scarlet,40,45,45,74,54,50,0,120,NULL,NULL
+1013,Sinistcha,NULL,Grass,Ghost,Scarlet,71,60,106,121,80,70,0,60,1874,Unremarkable Teacup
+1014,Okidogi,Sub-Legendary,Poison,Fighting,Scarlet,88,128,115,58,86,80,0,3,NULL,NULL
+1015,Munkidori,Sub-Legendary,Poison,Psychic,Scarlet,86,75,66,130,90,106,0,3,NULL,NULL
+1016,Fezandipiti,Sub-Legendary,Poison,Fairy,Scarlet,88,91,82,70,125,99,0,3,NULL,NULL
+1017,Ogerpon,Sub-Legendary,Grass,NULL,Scarlet,80,120,84,60,96,110,0,5,NULL,NULL
+1018,Archaludon,NULL,Steel,Dragon,Scarlet,90,105,130,125,65,85,0,10,1424,Metal Alloy
+1019,Hydrapple,NULL,Grass,Dragon,Scarlet,106,80,110,120,80,44,0,10,1870,Knowing Dragon Cheer
+1020,Gouging Fire,NULL,Fire,Dragon,Violet,105,115,121,65,93,91,0,10,NULL,NULL
+1021,Raging Bolt,NULL,Electric,Dragon,Scarlet,125,73,91,137,89,75,0,10,NULL,NULL
+1022,Iron Boulder,NULL,Rock,Psychic,Violet,90,120,80,68,108,124,0,10,NULL,NULL
+1023,Iron Crown,NULL,Steel,Psychic,Scarlet,90,72,100,122,108,98,0,10,NULL,NULL
+1024,Terapagos,Legendary,Normal,NULL,Violet,90,65,85,65,85,60,0,255,NULL,NULL
+1025,Pecharunt,Mythical,Poison,Ghost,Scarlet,88,88,160,88,88,88,0,3,NULL,NULL
