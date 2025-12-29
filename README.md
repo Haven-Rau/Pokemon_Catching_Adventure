@@ -49,7 +49,7 @@ cursor = conn.cursor()
 
 ### That's it, you're ready to play!
 
-<img width="659" height="378" alt="image" src="https://github.com/user-attachments/assets/b1ad8e78-e9a5-439d-9e06-4deedfbcb091" />
+<img width="533" height="378" alt="image" src="https://github.com/user-attachments/assets/b1ad8e78-e9a5-439d-9e06-4deedfbcb091" />
 
 *
 *
