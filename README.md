@@ -21,7 +21,7 @@ Available on Youtube using this link: "YOUTUBE LINK"
 
 [Table Creation.sql](https://github.com/user-attachments/files/24363922/Table.Creation.sql)
 
-*run query to create tables*
+- *run query to create tables*
 
 ### Step 2:  Download Excel sheet with Pokémon data:
 
@@ -31,11 +31,17 @@ Available on Youtube using this link: "YOUTUBE LINK"
 
 [Insert Values.sql](https://github.com/user-attachments/files/24363973/Insert.Values.sql)
 
-### Step 4: Download the Python Project (Sound effects, music, and images are included in the project and referenced appropraitely in Python)
+- *Make sure to rewrite the file location in the query*
+
+### Step 4: Download the Python Project 
+
+- *Sound effects, music, and images are already included in the project and referenced appropraitely in Python
+- *This project utilized Pycharm for development*
 
 ### Step 5: Download all python packages listed at the top of the file
 
 ### Step 6: Replace the SSMS connection in the Python file to match your server
+(Line 15-22)
 
 ```Python
 conn = pyodbc.connect(
@@ -47,7 +53,7 @@ conn = pyodbc.connect(
 cursor = conn.cursor()
 ```
 
-### That's it, you're ready to play!
+### That's it - you're ready to play!
 
 <img width="533" height="378" alt="image" src="https://github.com/user-attachments/assets/b1ad8e78-e9a5-439d-9e06-4deedfbcb091" />
 
@@ -467,7 +473,8 @@ To allow infinite encounters and catch attempts with Pokémon, loops needed to b
 
 This diagram represents the main gameplay loop used in the game:
 
-<img width="1700" height="923" alt="Game Loop (2)" src="https://github.com/user-attachments/assets/81a230a7-cf2f-452f-9984-56c062f44014" />
+<img width="1700" height="1024" alt="Game Loop (5)" src="https://github.com/user-attachments/assets/ce736fd4-4bb2-47ab-96d2-f1fb2faef00f" />
+
 
 As shown, the menus, encounter system, and catch attempt system are separated. The encounter system is defined as "p" at the end of the encounter process, remaining defined until it is redefined by another encounter trigger. This allows the catch attempt system to use "p" to pull the most recently encountered Pokémon, exluding any of the Pokémon encountered previously that were also "p". Then, these menus and systems are looped back based on the result of the catch attempt or a menu choice.
 
