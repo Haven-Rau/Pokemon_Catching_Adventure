@@ -17,15 +17,27 @@ Step 1:
 
 Download the sql tables on your SSMS server:
 
+[Table Creation.sql](https://github.com/user-attachments/files/24363922/Table.Creation.sql)
 
 
 # Important Development Explanations
 
 *This section is dedicated towards explaining how the game is developed* 
 
-## Sequel Server Management Studio (SSMS) Database
+## Sequel Server Management Studio (SSMS) Backend
 
 The original pokemon game didn't have to worry about overlapping data coming in from millions of players, since every game was unqiue. However, in a live database, every trainer needs to be uniquely defined, and every action made by a trainer needs that unique signature. 
+
+### ERD Diagram:
+
+<img width="950" height="566" alt="image" src="https://github.com/user-attachments/assets/2bcbc6a8-c531-4ee7-96a2-f2d92e4654bc" />
+
+
+### SQL Table Queries:
+
+#### Trainer - 
+
+The first table we have to create is the trainer table. This will house the trainer's unique ID, along with their name and the date their account was created. This table is essential to make all data related to a player's game unique to just them. 
 
 ```sql
 CREATE TABLE trainer
@@ -36,9 +48,35 @@ date_created DATETIME NOT NULL
 );
 ```
 
-Next, all 1025 Pokemon that have existed in the Pokemon universe need to be loaded into a table, along with their base stats. These stats are used during the encounter sequence for generating unique stats for each Pokemon. Since manually typing each Pokemon and its stats would take hours, I downloaded on online database into Excel and modified it to fit my table and game. 
+#### Pokemon_Species -
 
-You can access the excel table here: [Modified Pokemon Database.csv](https://github.com/user-attachments/files/24351705/Modified.Pokemon.Database.csv)
+All 1025 Pokemon that have existed in the Pokemon universe need to be loaded into a table, along with their base stats. These stats are used during the encounter sequence for generating unique stats for each Pokemon. 
+
+```sql
+Create table pokemon_species
+(
+pokedex_id integer Primary Key,
+pokemon_name varchar(255) not null,
+Legendary_Type varchar(255),
+type_1 varchar(255) not null,
+type_2 varchar(255),
+game_of_origin varchar(255),
+base_hp integer not null,
+base_attack integer not null,
+base_defense integer not null,
+base_sp_attack integer not null,
+base_sp_defense integer not null,
+base_speed integer not null,
+base_level integer,
+catch_rate integer not null,
+pre_evolution_id varchar(255),
+evolution_path varchar(255)
+)
+```
+
+Since manually typing in each Pokemon and its stats would take hours, I downloaded an online database to Excel and modified it to fit my table. 
+
+You can access the Excel sheet here: [Modified Pokemon Database.csv](https://github.com/user-attachments/files/24351705/Modified.Pokemon.Database.csv)
 
 Once the CSV is saved to your computer, you can run an sql query to load it into the table:
 
@@ -54,7 +92,9 @@ WITH (
 );
 ```
 
-After creating the Pokemon_species table, we need to add the Pokeball data to be later retrieved when catching Pokemon. Later on, I explain how throwing balls are incorperating into the game.
+#### Pokeball -
+
+We also need to add the Pokeball data to be later returned to Python when catching Pokemon.
 
 ```sql
 create table pokeball
@@ -65,7 +105,7 @@ catch_rate_mult float not null
 )
 ```
 
-For this game, I only included pokeballs, greatballs, ultraballs, and masterballs, with each ball containing a different catch probability multiplier. 
+For this game, I only included pokeballs, greatballs, ultraballs, and masterballs. Each ball contains a different catch probability multiplier, with higher multipliers in ascending order to their position. 
 
 ```sql
 insert into pokeball (pokeball_id,pokeball_name,catch_rate_mult)
@@ -76,7 +116,9 @@ values
 (4, 'masterball',100)
 ```
 
-Lastly, we need to built a trainer_pokemon database. 
+#### Trainer_pokemon -
+
+Lastly, we need to built a trainer_pokemon table. This will include the data of every Pokemon caught by a trainer. 
 
 ```SQL
 Create table trainer_pokemon
@@ -95,6 +137,8 @@ level integer not null,
 pokeball_id integer REFERENCES pokeball(pokeball_id) not null
 )
 ```
+
+Once a trainer catches a Pokemon, Python runs an insert statement to transfer all of the associated information. It also adds an instance_id to unique define that capture and make sure it stays associated with the trainer who caught it. 
 
 # Python Front End
 
@@ -165,7 +209,7 @@ If a player chooses to continue their previous game, they are directed to input 
 
 ## Encountering Pokemon
 
-Encountering a Pokemon in the games usually starts by walking into a section of the map deemed condusive to spawning Pokemon, such as grass, caves, and bodies of water. Without an actual character and map to enter these areas, I built a system to encounter a random pokemon instead.
+Encountering a Pokemon in the games usually starts by walking into a section of the map deemed condusive to spawning Pokemon, such as grass, caves, and bodies of water. Without an actual character or map to enter these areas, I built a system to encounter random pokemon instead.
 
 Since every Pokemon has a unique pokedex_id from 1-1025, I just did a uniform roll for an integer between 1 and 1025. So if the roll landed on 1, the trainer would encounter bulbasaur, who has a unique pokedex_id of 1. For my game inside Python, I downloaded images of each pokemon, named the images their corresponding pokedex_id, matched the integer roll to the picture name, then displayed it with a MatLab import.
 
