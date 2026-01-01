@@ -1,4 +1,4 @@
-# Python/SQL Game: Catch a Pokémon!
+# Python/SQL Game: Pokemon Catching Adventure!
 
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/a2751be7-33a9-4e1c-8fea-b88aaddf07ee" />
 
@@ -6,7 +6,7 @@
 The original Pokémon games, Red and Blue, reshaped the video game industry when it was released. Video games at the time focused on linearity; a clear beginning and end with not much content in between. Princess peach is captured, go on this quest to save her. While many Pokémon enthusiasts remember its game for the lovable characters and story, Pokémon was one of the first games to develop an experience buiilt on repitition: a loop of collection, storing, and managing Pokémon that could be enjoyed beyond the main story. Within this gameplay loop, the original develpopers needed to use data to their advantage. Games 
 
 ### Goal of the game:
-Professor Oak, a research scientist who makes frequent apperances throughout the original games, is creating a new revive serum to help heal Pokémon. He needs a trainer to help him aquire Pokémon samples, which can only be retrieved from Pokémon after they've been caught in a Pokéball. Your objective is to capture 3 Pokémon and hand them over to professor Oak to complete his research.
+Professor Oak, a research scientist who makes frequent apperances throughout the original games, is creating a new revive serum to help heal Pokémon. He needs a trainer to help him aquire Pokémon samples, which can only be retrieved from Pokémon after they've been caught in a Pokéball. Your objective is to help Professor Oak by catching Pokemon while avoiding doom along the way! 
 
 ### Please take a look at the final product before playing!
 Available on Youtube using this link: "YOUTUBE LINK"
