@@ -1,26 +1,23 @@
 # Python/SQL Game: Pokémon Catching Adventure!
 
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/a2751be7-33a9-4e1c-8fea-b88aaddf07ee" />
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/a2751be7-33a9-4e1c-8fea-b88aaddf07ee" />
 
 ##### Disclaimer: This project is a fan-made, non-commercial game. Pokémon and all related names, images, and sounds are trademarks and copyrights of Nintendo, Game Freak, and The Pokémon Company. No infringement intended.
 
 ## Goal of the game
-Professor Oak, a research scientist seen throughout the original games, is on the verge of a scientific breakthrough - a powerful new revive serum to heal fainted Pokémon. To complete his research, he needs a trainer to help him aquire Pokémon samples, which can only be retrieved from Pokémon after they've been caught in a Pokéball. 
+Professor Oak, a research scientist seen throughout the original games, is on the verge of a scientific breakthrough - a powerful new revive serum to heal fainted Pokémon. To complete his research, he needs a trainer to help him acquire Pokémon samples, which can only be retrieved from Pokémon after they've been caught in a Pokéball. 
 
 Catch Pokémon, return them to Professor Oak’s laboratory, and survive encounters with wild Pokémon and hostile opponents along the way!
 
-## Take a look at the final product before playing!
-Available on Youtube using this link: (https://www.youtube.com/watch?v=9modyBxMpoA)
+### Watch the game being played on Youtube! (https://www.youtube.com/watch?v=9modyBxMpoA)
 
 
 <img width="130" height="306" alt="image" src="https://github.com/user-attachments/assets/bc64999d-9a9a-4c00-9aec-22cdb965ccfb" />
 
--
--
 
 ## How to Download and play the game:
 
-### Step 1: Download the sql tables on your SSMS server:
+### Step 1: Download the SQL tables on your SSMS server:
 
 [Table Creation.sql](https://github.com/user-attachments/files/24363922/Table.Creation.sql)
 
@@ -38,7 +35,6 @@ Available on Youtube using this link: (https://www.youtube.com/watch?v=9modyBxMp
 
 ### Step 4: Download the Python Project: 
 
-- *Sound effects, music, and images are already included in the project and referenced appropraitely in Python*
 - *This project utilized Pycharm for development, and may be required to play the game*
 
 ### Step 5: Download all python packages listed at the top of the file:
@@ -49,7 +45,7 @@ Available on Youtube using this link: (https://www.youtube.com/watch?v=9modyBxMp
 
 Replace the SSMS connection in the Python file to match your server (Line 15-22) -
 
-For Windows authentification -
+For Windows authentication -
 ```Python
 conn = pyodbc.connect(
     'DRIVER={ODBC Driver 17 for SQL Server};' # Your driver might be 18
@@ -84,7 +80,7 @@ conn = pyodbc.connect(
 
 ## Sequel Server Management Studio (SSMS) Backend
 
-This Pokemon game's backend design was created to mirror what modern Pokemon game databases look like - a perpetual push and pull of information using queries to dictate game experiences and track important information. I also designed the backend to be a pseudo "live" database, where multiple unique games can exist at one time without conflicting with eachother. This is accomplished through intentional table designs that utilize primary and foreign keys to maintain uniqueness and properly communicate between eachother. 
+This Pokémon game's backend design was created to mirror what modern Pokémon game databases look like - a perpetual push and pull of information using queries to dictate game experiences and track important information. I also designed the backend to be a pseudo "live" database, where multiple unique games can exist at one time without conflict. This is accomplished through intentional table designs that utilize primary and foreign keys to maintain uniqueness and properly communicate between each other. 
 
 ### ERD Diagram:
 
@@ -108,7 +104,7 @@ date_created DATETIME NOT NULL
 
 #### pokémon_Species -
 
-All 1025 pokémon that have existed in the Pokémon universe also need to be loaded into a table along with their base stats. These stats are used during the encounter sequence for generating unique stats for each Pokémon. This is a standalone table with no relationships to other tables.
+All 1025 Pokémon that have existed in the Pokémon universe also need to be loaded into a table along with their base stats. These stats are used during the encounter sequence for generating unique stats for each Pokémon. This is a standalone table with no relationships to other tables.
 
 ```sql
 Create table pokemon_species
@@ -136,7 +132,7 @@ Since manually typing in each Pokémon and its stats would take hours, I downloa
 
 You can access the Excel sheet here: [Modified Pokemon Database.csv](https://github.com/user-attachments/files/24351705/Modified.Pokemon.Database.csv)
 
-Once the CSV is saved to your computer, you can run an sql query to load it into the table:
+Once the CSV is saved to your computer, you can run an SQL query to load it into the table:
 
 ```sql
 BULK INSERT pokemon_species
@@ -152,7 +148,7 @@ WITH (
 
 #### Pokéball -
 
-We also need to add the Pokéball data to be later returned to Python when catching Pokemon.
+We also need to add the Pokéball data to be later returned to Python when catching Pokémon.
 
 ```sql
 create table pokeball
@@ -176,8 +172,7 @@ values
 
 #### Trainer_pokemon -
 
-Lastly, we need to build a trainer_pokemon table. This will include the data of every Pokémon caught by a trainer, and is the foundation for developing a "live" database. Once a trainer catches a Pokémon, Python runs an insert statement to transfer all of the associated information with that captured Pokemon and the trainer who caught it. The instance_id is the Primary Key that unique defines the capture, which will now always be associatted with that unique Pokemon. 
-
+Lastly, we need to build a trainer_pokemon table. This will include the data of every Pokémon caught by a trainer, and is the foundation for developing a "live" database. Once a trainer catches a Pokémon, Python runs an insert statement to transfer all of the associated information with that captured Pokémon and the trainer who caught it. The instance_id is the Primary Key that unique defines the capture, which will now always be associatted with that unique Pokémon. This table has a one to many relationship with the trainer table, as each instance_id is associated with only one trainer while each trainer can have multiple instance_ids. Additionally, it also has a many to many relationship with the Pokeball table. Each instance_id can be associated with many pokeballs and each pokeball can be used in multiple instance_ids. 
 
 ```SQL
 Create table trainer_pokemon
@@ -199,7 +194,7 @@ pokeball_id integer REFERENCES pokeball(pokeball_id) not null
 
 # Python Front End
 
-### Choosing between a new game and conitnuing previous game
+### Choosing between a new game and continuing previous game
 
 The player is directed to choose between starting a new game or continuing where they left off:
 
@@ -265,20 +260,20 @@ If a player chooses to continue their previous game, they are directed to input 
 
 ## Encountering Pokémon
 
-Encountering a Pokémon in the games usually starts by walking into a section of the map deemed condusive to spawning Pokémon, such as grass, caves, and bodies of water. Without an actual character or map to enter these areas, I built a system to encounter random Pokémon instead.
+Encountering a Pokémon in the games usually starts by walking into a section of the map deemed conducive to spawning Pokémon, such as grass, caves, and bodies of water. Without an actual character or map to enter these areas, I built a system to encounter random Pokémon instead.
 
-Since every Pokémon has a unique pokedex_id from 1-1025, I just did a uniform roll for an integer between 1 and 1025. So if the roll landed on 1, the trainer would encounter bulbasaur, who has a unique pokedex_id of 1. For my game inside Python, I downloaded images of each Pokémon, named the images their corresponding pokedex_id, matched the integer roll to the picture name, then displayed it with a MatLab import.
+Since every Pokémon has a unique pokedex_id from 1-1025, I just did a uniform roll for an integer between 1 and 1025. So if the roll landed on 1, the trainer would encounter Bulbasaur, who has a unique pokedex_id of 1. For my game inside Python, I downloaded images of each Pokémon, named the images their corresponding pokedex_id, matched the integer roll to the picture name, then displayed it with a MatLab import.
 
 <img width="1331" height="324" alt="image" src="https://github.com/user-attachments/assets/b87adc94-4765-4755-b8bf-5b17ef0bb4f6" />
 
 
 
-In every Pokémon game, each encounter with a Pokémon is unique. Although trainers can encounter the same Pokémon multiple times, and similarily that Pokémon can belong to many trainers, every Pokémon differs in their stats.  
+In every Pokémon game, each encounter with a Pokémon is unique. Although trainers can encounter the same Pokémon multiple times, and similarly that Pokémon can belong to many trainers, every Pokémon differs in their stats.  
 
 The original Pokémon database, which was originally created using complex arrays locked into the memory of the game, assigned base stats to each Pokémon, and then used unique formulas/multipliers to generate variety in those stats during each encounter. These adjusted stats are commonly known as "IVs". That's what I replicated in my game, but using SSMS as the arrays.
 
 
-Once an encounter with a Pokémon began, I used that Pokémon's base states stored in the table and run it through the actual formulas used in the Pokémon games. I decided to not use the original formulas for the Red/Blue games, as these formulas were engineered to little memory inside a gameboy. I elected to mirror the more modern Pokémon games, which still utilizes the same random generation principles as the original, but allows for more randomness. There are two main formulas used in modern games, the health formula and the general base stat formula (attack, defense, speed, etc.). Each of these formulas require a uniform roll of an integer between 0 and 31, giving a 1 in 32 (~3.1%) chance per stat. The probability of a Pokémon having a specific IV value across all six stats is therefore (1/32)⁶. Or, in other words, the probability of encountering two statistically identical Pokémon is about 1 in 1.07 billion. Not truly unique, but just about!
+Once an encounter with a Pokémon began, I used that Pokémon's base states stored in the table and run it through the actual formulas used in the Pokémon games. I decided to not use the original formulas for the Red/Blue games, as these formulas were engineered to little memory inside a Gameboy. I elected to mirror the more modern Pokémon games, which still utilizes the same random generation principles as the original, but allows for more randomness. There are two main formulas used in modern games, the health formula and the general base stat formula (attack, defense, speed, etc.). Each of these formulas require a uniform roll of an integer between 0 and 31, giving a 1 in 32 (~3.1%) chance per stat. The probability of a Pokémon having a specific IV value across all six stats is therefore (1/32)⁶. Or, in other words, the probability of encountering two statistically identical Pokémon is about 1 in 1.07 billion. Not truly unique, but just about!
 
 ### IV Stats Formuala:
 
@@ -310,7 +305,7 @@ Once an encounter with a Pokémon began, I used that Pokémon's base states stor
 
 Encounters with Pokemon are always triggered by the selection of an encounter option in a menu prompt. 
 
-#### There are 3 different menues that trigger a unique encounter.
+#### There are 3 different menus that trigger a unique encounter.
 
 - The beginning of the game menu
 ```Python
@@ -361,7 +356,7 @@ However, since my game doesn't contains battling mechanics, as it focuses more o
 
 During the catching sequence of the original and modern Pokemon games, trainers have always had the ability to choose the type of Pokéballs they throw. Some Pokéballs are inherently better than others, such as the ultraball increasing the catch rate above greatballs. But, some Pokéballs also have unique effects, such a weather, nighttime, and type matching boosts.  
 
-Unfortuantely, my game doesn't include weather patterns, locations, or any other unique elements that would favor a certain Pokéball type over another. In conjunction, given the chance to choose between an evidently strong ball and a weak ball, a player would choose to use the stronger ball every time. Therefore, I have a weighted random roll that determines whether the trainer throws a Pokéball, Greatball, Ultraball, or Masterball (100% catch rate), with stronger balls having a lower probability. In python, once the weighted roll picks a number, it matches that number to the Primary Key in the SSMS Pokéball table.
+Unfortunately, my game doesn't include weather patterns, locations, or any other unique elements that would favor a certain Pokéball type over another. In conjunction, given the chance to choose between an evidently strong ball and a weak ball, a player would choose to use the stronger ball every time. Therefore, I have a weighted random roll that determines whether the trainer throws a Pokéball, Greatball, Ultraball, or Masterball (100% catch rate), with stronger balls having a lower probability. In python, once the weighted roll picks a number, it matches that number to the Primary Key in the SSMS Pokéball table.
 
 In the future, I would like to explore giving a finite number of stronger balls to the trainer at the start and allow them to choose what balls they throw. This would encourage a strategy to save stronger balls for stronger Pokémon. 
 
@@ -382,7 +377,7 @@ After throwing a ball, many different things can happen -
 
 #### 1. The Pokémon broke free -
 
-This result is dependent on the uniform roll of the catch rate compared to the catch rate percentage of the Pokémon. If the roll is greater than the catch rate, the Pokémon breaks free
+This result is dependent on the uniform roll of the catch rate compared to the catch rate percentage of the Pokémon. If the roll is greater than the catch rate, the Pokémon breaks free.
 ```Python
   # Perform the catch roll
         roll = random.uniform(0, 100)
@@ -437,7 +432,7 @@ Once a Pokémon is caught, I built python trigger to create another row in the d
 
 ## Building a Pokedex of Captured Pokémon.
 
-Once a Pokémon is caught, trainers are given access to their Podex, which catalogs the Pokémon they've caught. It includes both the general information of each captured Pokémon along with their IV_stats that were calculated during the encounter. Each additionall capture adds to the Pokedex, and each successful capture gives menu access to view a newly updated Pokedex.
+Once a Pokémon is caught, trainers are given access to their Podex, which catalogs the Pokémon they've caught. It includes both the general information of each captured Pokémon along with their IV_stats that were calculated during the encounter. Each additional capture adds to the Pokedex, and each successful capture gives menu access to view a newly updated Pokedex.
 
 The pokedex is built by utilizing the trainer_pokemon, pokemon_species, and pokeball tables. The trainer_pokemon table contains the unique captured Pokémon and their IV stats, the pokemon_species table includes the generation information related to each Pokémon (name, type, game of origin, etc.), and the pokeball table gives us the Pokéball name used to capture the Pokémon. Even though the caught Pokémon of each trainer exists in the trainer_pokeball table, we can use the trainers trainer_id to limit results to their captured Pokémon.  
 
@@ -474,11 +469,11 @@ This diagram represents the main gameplay loop used in the game:
 <img width="1700" height="1024" alt="Game Loop (5)" src="https://github.com/user-attachments/assets/ce736fd4-4bb2-47ab-96d2-f1fb2faef00f" />
 
 
-As shown, the menus, encounter system, and catch attempt system are separated. The encounter system is defined as "p" at the end of the encounter process, remaining defined until it is redefined by another encounter trigger. This allows the catch attempt system to use "p" to pull the most recently encountered Pokémon, exluding any of the Pokémon encountered previously that were also "p". Then, these menus and systems are looped back based on the result of the catch attempt or a menu choice.
+As shown, the menus, encounter system, and catch attempt system are separated. The encounter system is defined as "p" at the end of the encounter process, remaining defined until it is redefined by another encounter trigger. This allows the catch attempt system to use "p" to pull the most recently encountered Pokémon, excluding any of the Pokémon encountered previously that were also "p". Then, these menus and systems are looped back based on the result of the catch attempt or a menu choice.
 
 ## Game storyline triggers.
 
-When starting a new game, each trainer is given a capture count of 0, and each Pokémon capture increases that count. When continuing a previous game, the capture count is defined through a query that counts the total Pokemon caught associated with the trainer_id.
+When starting a new game, each trainer is given a capture count of 0, and each Pokémon capture increases that count. When continuing a previous game, the capture count is defined through a query that counts the total Pokémon caught associated with the trainer_id.
 
 - Continuing previous game:
   
@@ -504,13 +499,13 @@ After the player catches their first Pokémon, Professor Oak is triggered to beg
 
 However, when this menu appears when the capture count is 0, it's slightly adjar considering there's no option 2, only options 1 & 3. I could fix this by switching option 2 and 3, but having the option "View Pokedex" after the option to "Exit Game" sounds strager. So, this menu is a working progress. 
 
-After the player has their third capture, Team Rocket appears in attempt to steal the trainer's Pokemon. The trainer is knocked out, but saved by a nearby trainer who heard the commotion. The trainer then awakes to Nurse Joy and professor Oak in a Pokemon health center. 
+After the player has their third capture, Team Rocket appears in attempt to steal the trainer's Pokémon. The trainer is knocked out, but saved by a nearby trainer who heard the commotion. The trainer then awakes to Nurse Joy and professor Oak in a Pokémon health center. 
 
-Once the player catches four Pokemon, they are given access to the "Type Scanner" and "Electric Stabalizer device". These devices are then used in the Kirin region to capture electric Pokemon and finalize Professor Oak's sample. 
+Once the player catches four Pokémon, they are given access to the "Type Scanner" and "Electric Stabalizer device". These devices are then used in the Kirin region to capture electric Pokémon and finalize Professor Oak's sample. 
 
-### Electric Stabalizer:
+### Electric Stabilizer:
 
-Obtaining this device activites a different pool of Pokemon to reflect enterin the Kirin region. I hand picked the Pokemon in the Kirin region to allow for more objective oriented gameplay -
+Obtaining this device activates a different pool of Pokémon to reflect entering the Kirin region. I hand picked the Pokémon in the Kirin region to allow for more objective oriented gameplay -
 
 ```Python
  capture_count = cursor.fetchone()[0]
@@ -524,7 +519,7 @@ Obtaining this device activites a different pool of Pokemon to reflect enterin t
         else:
             p = encounter()
 ```
-Each electric Pokemon captured adds to the stabalizer percentage. Stronger Pokemon add more percentage, while legendaries automatically set the percentage to 100%.
+Each electric Pokémon captured adds to the stabilizer percentage. Stronger Pokémon add more percentage, while legendaries automatically set the percentage to 100%.
 
 ```Python
             if electric_id in (796,642): #Xurkitree and Thunderous
@@ -543,7 +538,7 @@ Each electric Pokemon captured adds to the stabalizer percentage. Stronger Pokem
 
 ### Type Scanner:
 
-The type scanner shows the trainer the type of the Pokemon they have encountered. It's gatekept until the electric stabalizer is obtain.
+The type scanner shows the trainer the type of the Pokémon they have encountered. It's gatekept until the electric stabilizer is obtain.
 
 ```Python
 print("\nWould you like to throw a Pokéball?")
@@ -571,7 +566,7 @@ print("\nWould you like to throw a Pokéball?")
 
 
 ## The Ending
-After the electric stabilizer reaches 100%, the game is successfuly completed, rewarding the player with a special message from professor Oak and vistory music from the original games. Once the game is complete, the player still has the opportunity to encounter and capture more Pokémon to add to their pokedex, but can no longer access the Kirin region.
+After the electric stabilizer reaches 100%, the game is successfully completed, rewarding the player with a special message from professor Oak and victory music from the original games. Once the game is complete, the player still has the opportunity to encounter and capture more Pokémon to add to their pokedex, but can no longer access the Kirin region.
 
 Thanks for reading!
 
