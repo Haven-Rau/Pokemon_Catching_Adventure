@@ -9,6 +9,10 @@ Professor Oak, a research scientist seen throughout the original games, is on th
 
 Catch Pokémon, return them to Professor Oak’s laboratory, and survive encounters with wild Pokémon and hostile opponents along the way!
 
+![gengar1-ezgif com-resize (1)](https://github.com/user-attachments/assets/ecd27be5-3fa4-4dbd-b321-55d6be2f9ae6)
+
+
+
 ### Watch the game being played on Youtube! ([https://www.youtube.com/watch?v=9modyBxMpoA](https://youtu.be/9modyBxMpoA))
 
 
@@ -35,7 +39,7 @@ Catch Pokémon, return them to Professor Oak’s laboratory, and survive encount
 
 ### Step 4: Download the Python Project: 
 
-- *This project utilized Pycharm for development, and may be required to play the game*
+- *This project utilized Pycharm with Puyhon interpreter 3.11 for development, and may be required to play the game*
 
 ### Step 5: Download all python packages listed at the top of the file:
 
