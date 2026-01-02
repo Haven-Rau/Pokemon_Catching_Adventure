@@ -41,7 +41,8 @@ Catch Pokémon, return them to Professor Oak’s laboratory, and survive encount
 
 ### Step 6: Connect to SSMS from Python:
 
-*May first require 'pip install pyodbc' ran in terminal* 
+May first require 
+```pip install pyodbc``` ran in terminal.
 
 Replace the SSMS connection in the Python file to match your server (Line 15-22) -
 
