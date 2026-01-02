@@ -39,7 +39,7 @@ Catch Pokémon, return them to Professor Oak’s laboratory, and survive encount
 
 ### Step 4: Download the Python Project: 
 
-- *This project utilized Pycharm with Puyhon interpreter 3.11 for development, and may be required to play the game*
+- *This project utilized Pycharm with Python interpreter 3.11 for development, and may be required to play the game*
 
 ### Step 5: Download all python packages listed at the top of the file:
 
