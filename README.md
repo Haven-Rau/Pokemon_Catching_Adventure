@@ -27,7 +27,7 @@ Catch Pokémon, return them to Professor Oak’s laboratory, and survive encount
 
 [Modified Pokémon Database.csv](https://github.com/user-attachments/files/24363961/Modified.Pokemon.Database.csv)
 
-### Step 3: Insert data into tables:
+### Step 3: Import Data:
 
 [Insert Values.sql](https://github.com/user-attachments/files/24363973/Insert.Values.sql)
 
