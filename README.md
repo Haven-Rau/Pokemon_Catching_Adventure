@@ -4,7 +4,7 @@
 
 ##### Disclaimer: This project is a fan-made, non-commercial game. Pokémon and all related names, images, and sounds are trademarks and copyrights of Nintendo, Game Freak, and The Pokémon Company. No infringement intended.
 
-## Goal of the game
+## Goal of the Game
 Professor Oak, a research scientist seen throughout the original games, is on the verge of a scientific breakthrough - a powerful new revive serum to heal fainted Pokémon. To complete his research, he needs a trainer to help him acquire Pokémon samples, which can only be retrieved from Pokémon after they've been caught in a Pokéball. 
 
 Catch Pokémon, return them to Professor Oak’s laboratory, and survive encounters with wild Pokémon and hostile opponents along the way!
@@ -15,7 +15,7 @@ Catch Pokémon, return them to Professor Oak’s laboratory, and survive encount
 <img width="130" height="306" alt="image" src="https://github.com/user-attachments/assets/bc64999d-9a9a-4c00-9aec-22cdb965ccfb" />
 
 
-## How to Download and play the game:
+## How to Download and Play the Game:
 
 ### Step 1: Download the SQL tables on your SSMS server:
 
