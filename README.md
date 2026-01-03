@@ -83,7 +83,7 @@ conn = pyodbc.connect(
 
 *This section is dedicated towards explaining how the game is developed.* 
 
-## Sequel Server Management Studio (SSMS) Backend
+## SQL Server Management Studio (SSMS) Backend
 
 This Pokémon game's backend design was created to mirror what modern Pokémon game databases look like - a perpetual push and pull of information using queries to dictate game experiences and track important information. I also designed the backend to be a pseudo "live" database, where multiple unique games can exist at one time without conflict. This is accomplished through intentional table designs that utilize primary and foreign keys to maintain uniqueness and properly communicate between each other. 
 
