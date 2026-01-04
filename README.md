@@ -80,7 +80,7 @@ conn = pyodbc.connect(
 *
 *
 
-# Important Development Explanations
+# Development
 
 *This section is dedicated towards explaining how the game is developed.* 
 
