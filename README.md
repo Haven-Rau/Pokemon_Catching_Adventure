@@ -10,7 +10,7 @@ Professor Oak, a research scientist seen throughout the original games, is on th
 
 Catch Pokémon, return them to Professor Oak’s laboratory, and survive encounters with wild Pokémon and hostile opponents along the way!
 
-(This is a text-based Python game focused on recreating the main catching experience of the Pokémon games. I implemented OG music, characters, and sound effects to make the it feel like you're playing the original games on the Gameboy. It features realistic mechanics like IV_formula calculations, weighted catch rates, and Pokedex building. Please let me know what you think! I'd appreciate feedback of any kind.)
+(This is a text-based Python game focused on recreating the main catching experience of the Pokémon games. I implemented OG music, characters, and sound effects reminiscent of the original games on the Gameboy. The game features realistic mechanics like IV_formula calculations, weighted catch rates, and Pokedex building. Please let me know what you think! I'd appreciate feedback of any kind.)
 ![gengar1-ezgif com-resize (1)](https://github.com/user-attachments/assets/ecd27be5-3fa4-4dbd-b321-55d6be2f9ae6)
 
 
