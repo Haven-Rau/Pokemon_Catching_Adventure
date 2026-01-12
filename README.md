@@ -14,7 +14,7 @@ Catch Pokémon, return them to Professor Oak’s laboratory, and survive encount
 
 
 
-### Watch the game being played on Youtube! ([https://www.youtube.com/watch?v=9modyBxMpoA](https://youtu.be/9modyBxMpoA))
+### Watch a demo on Youtube! ([https://www.youtube.com/watch?v=9modyBxMpoA](https://youtu.be/9modyBxMpoA))
 
 
 <img width="130" height="306" alt="image" src="https://github.com/user-attachments/assets/bc64999d-9a9a-4c00-9aec-22cdb965ccfb" />
