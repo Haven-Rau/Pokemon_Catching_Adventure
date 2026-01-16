@@ -44,7 +44,7 @@ Catch Pokémon, return them to Professor Oak’s laboratory, and survive encount
 
 ### Step 5: Download all python packages listed at the top of the file:
 
-Warning: All displayed game images, including images of encountered Pokemon, are currently rendered using Matplotlib. When running in **PyCharm Pro (Scientific Mode / SciView)**, these images will appear inline inside the IDE, as represented in the above GIF. However, without a Pro license, Matplotlib will open a separate window and pause the game until the window is manually closed. I apologize for not realizing inline images are an exclusive park for Pro licenses.
+Warning: All displayed game images, including images of encountered Pokemon, are currently rendered using Matplotlib. When running with a **PyCharm Pro** license, these images will appear inline inside the IDE, as represented in the above GIF. However, without a Pro license, Matplotlib will open a separate window and pause the game until the window is manually closed. I apologize for not realizing inline images are an exclusive park for Pro licenses.
 
 - Future versions may migrate these image displays to native `pygame` rendering. 
 
